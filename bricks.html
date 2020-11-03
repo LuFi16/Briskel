@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briskel Bricks - bricks</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/08ab134375.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <!--only for desktop and up-->
+    <div class="c-menu-desktop c-menu">
+        <a href="index.html"><img src="img/Briskel-logo.svg" alt="Briskel logo" title="Briskel Bricks" class="c-header_logo"></a>
+        <nav class="c-menu-desktop-nav">
+            <ul>
+                <li><a href="index.html">Domů</a><span class="c-menu_line"></span></li>
+                <li><a href="bricks.html">Bricks</a><span class="c-menu_line"></span></li>
+                <li><a href="how_it_works.html">Princip</a><span class="c-menu_line"></span></li>
+                <li><a href="kontakt.html">Kontakt</a><span class="c-menu_line"></span></li>
+            </ul>
+            <div class="c-menu_flag"><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img"></a></div>
+        </nav>
+    </div>
+
+    <!--only for tablet and low-->
+    <div class="c-menu-mobile c-menu">
+        <div class="c-menu-hamburger">
+            <a href="index.html"><img src="img/Briskel-logo.svg" alt="Briskel logo" title="Briskel Bricks" class="c-header_logo"></a>
+            <a class="c-menu-hamburger-icon" onclick="HamburgerMenu()"><i class="fa fa-bars"></i></a>
+        </div>
+
+        <nav id="c-mobile-nav">
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="bricks.html">Bricks</a></li>
+                <li><a href="how_it_works.html">Princip</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img">English</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<main id="c-page">
+
+    <noscript class="c-warning">Prosím, povolte si javascript v prohlížeči. Některé funkce Vám jinak mohou být skryty.</noscript>
+
+    <h1>Bricks</h1>
+
+    <!-- delete onclick function NeniKDispozici, when project is complete -->
+
+    <h2>Ovládání</h2>
+    <div class="c-cards">   <!-- for desktop only-->
+        <a href="#" class="c-card" onclick="NeniKDispozici()">
+            <img src="img/bricks/potenciometr.jpg" alt="Potenciometr">
+            <p>Potenciometr</p>
+        </a>
+
+        <a href="#" class="c-card" onclick="NeniKDispozici()">
+            <img src="img/bricks/joystick.jpg" alt="Joystick">
+            <p>Joystick</p>
+        </a>
+    </div>
+
+    <ul class="c-bricks-ul">    <!-- for tablet and low -->
+        <li><a href="#" onclick="NeniKDispozici()">Potenciometr</a></li>
+        <li><a href="#" onclick="NeniKDispozici()">Joystick</a></li>
+    </ul>
+
+    <h2>Světla</h2>
+    <div class="c-cards">   <!-- for desktop only-->
+        <a href="#" class="c-card" onclick="NeniKDispozici()">
+            <img src="img/bricks/led_semafor.jpg" alt="Semafor">
+            <p>Semafor</p>
+        </a>
+
+        <a href="#" class="c-card" onclick="NeniKDispozici()">
+            <img src="img/bricks/lampicka.jpg" alt="Lampička">
+            <p>Lampička</p>
+        </a>
+
+        <a href="3dioda.html" class="c-card">
+            <img src="img/bricks/dioda_tribarevna.jpg" alt="Tříbarevná dioda">
+            <p>Tříbarevná dioda</p>
+        </a>
+    </div>
+
+    <ul class="c-bricks-ul">    <!-- for tablet and low -->
+        <li><a href="#" onclick="NeniKDispozici()">Semafor</a></li>
+        <li><a href="#" onclick="NeniKDispozici()">Lampička</a></li>
+        <li><a href="3dioda.html">Tříbarevná dioda</a></li>
+    </ul>
+
+    <h2>Motory</h2>
+    <div class="c-cards">   <!-- for desktop only-->
+        <a href="#" class="c-card" onclick="NeniKDispozici()">
+            <img src="img/bricks/motor_kola.jpg" alt="Kola">
+            <p>Kola</p>
+        </a>
+
+        <a href="#" class="c-card" onclick="NeniKDispozici()">
+            <img src="img/bricks/vetrak.jpg" alt="Ventilátor">
+            <p>Ventilátor</p>
+        </a>
+
+        <a href="#" class="c-card" onclick="NeniKDispozici()">
+            <img src="img/bricks/servomotor.jpg" alt="Servomotory">
+            <p>Servomotory</p>
+        </a>
+    </div>
+
+    <ul class="c-bricks-ul">    <!-- for tablet and low -->
+        <li><a href="#" onclick="NeniKDispozici()">Kola</a></li>
+        <li><a href="#" onclick="NeniKDispozici()">Ventilátor</a></li>
+        <li><a href="#" onclick="NeniKDispozici()">Servomotory</a></li>
+    </ul>
+
+    <h2>Ostatní</h2>
+    <div class="c-cards">   <!-- for desktop only-->
+        <a href="#" class="c-card" onclick="NeniKDispozici()">
+            <img src="img/bricks/bzucak.jpg" alt="Bzučák">
+            <p>Bzučák</p>
+        </a>
+
+        <a href="#" class="c-card" onclick="NeniKDispozici()">
+            <img src="img/bricks/napajeni.jpg" alt="Napájení 4xAA">
+            <p>Napájení 4xAA</p>
+        </a>
+
+        <a href="#" class="c-card" onclick="NeniKDispozici()">
+            <img src="img/bricks/rozbocovac.jpg" alt="Rozbočovač">
+            <p>Rozbočovač</p>
+        </a>
+    </div>
+
+    <ul class="c-bricks-ul">    <!-- for tablet and low -->
+        <li><a href="#" onclick="NeniKDispozici()">Bzučák</a></li>
+        <li><a href="#" onclick="NeniKDispozici()">Napájení 4xAA</a></li>
+        <li><a href="#" onclick="NeniKDispozici()">Rozbočovač</a></li>
+    </ul>
+
+
+
+</main>
+
+<footer>
+    <p>
+        &copy; 2020 Martin Paták a Lucie Fiedlerová<br>
+        Background image by <a href="https://pixabay.com/users/semevent-4278751/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2458575">Semevent</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2458575">Pixabay</a>
+    </p>
+</footer>
+
+<script src="javascript/main.js"></script>
+
+</body>
+</html>

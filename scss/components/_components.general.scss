@@ -1,0 +1,108 @@
+
+/* FONTS */
+@font-face {
+  font-family: Open-Sans-Regular;
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Open-Sans-Bold;
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: Open-Sans-Italic;
+  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
+}
+
+/* SIZES */
+
+$size-mobile: 400px;
+$size-tablet: 800px;
+
+
+$size-page: 80rem;
+$size-indent-from-left-border: 14rem;
+$size-indent-section-heading: calc(14rem - 1rem);
+$size-video-width: 40rem;
+$size-mobile-video-width: 100%;
+$size-img-width: 20rem;
+$size-mobile-img-width: 100%;
+$size-content-indent-left: 2rem;
+$size-bottom-indent: 2rem;
+
+$size-slideshow-width: 50rem;
+$size-slideshow-height: 33rem;
+$size-mobile-slideshow-width: 100%;
+$size-mobile-slideshow-height: 20rem;
+
+
+/* delete this > */
+@media (min-width: $size-tablet) {
+}
+@media (max-width: $size-tablet) {
+}
+
+@media (min-width: 801px) and (max-width: 1360px) {
+}
+@media (min-width: 1361px){
+}
+/* < delete this */
+
+body{
+  margin: 0;
+  font-family: Open-Sans-Regular;
+  background: $color-background url("../img/lego-blocks.jpg") no-repeat center;
+  background-size: cover;
+  @media (min-width: $size-tablet) {
+  }
+  @media (max-width: $size-tablet) {
+  }
+}
+
+.c-btn{            //button
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: $color-primary-blue;
+  color: $color-text-invert;
+  @media (min-width: $size-tablet) {
+    margin: auto;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+  }
+  @media (max-width: $size-tablet) {
+    font-size: 11px;
+    margin: 2rem auto 0 auto;
+    padding: 0.7rem 1rem;
+    border-radius: 15px;
+  }
+}
+.c-btn:hover{
+  background-color: $color-primary-yellow;
+  color: $color-text-classic;
+}
+
+a{                //link
+  text-decoration: none;
+  color: $color-primary-green;
+}
+a:hover, a:active{    //hover and when clicking
+  color: $color-primary-red;
+}
+a:focus{              //after click
+  color: $color-primary-yellow;
+}
+
+.c-warning{
+  box-sizing: border-box;
+  display: block;
+  padding: 1rem;
+  margin: -5rem 0 0 0;
+  width: 100%;
+  text-align: center;
+  background-color: $color-warning-bcg;
+  font-weight: bold;
+}

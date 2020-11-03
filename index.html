@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briskel Bricks</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/08ab134375.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <!--only for desktop and up-->
+    <div class="c-menu-desktop c-menu">
+        <a href="index.html"><img src="img/Briskel-logo.svg" alt="Briskel logo" title="Briskel Bricks" class="c-header_logo"></a>
+        <nav class="c-menu-desktop-nav">
+            <ul>
+                <li><a href="index.html">Domů</a><span class="c-menu_line"></span></li>
+                <li><a href="bricks.html">Bricks</a><span class="c-menu_line"></span></li>
+                <li><a href="how_it_works.html">Princip</a><span class="c-menu_line"></span></li>
+                <li><a href="kontakt.html">Kontakt</a><span class="c-menu_line"></span></li>
+            </ul>
+            <div class="c-menu_flag"><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img"></a></div>
+        </nav>
+    </div>
+
+    <!--only for tablet and low-->
+    <div class="c-menu-mobile c-menu">
+        <div class="c-menu-hamburger">
+            <a href="index.html"><img src="img/Briskel-logo.svg" alt="Briskel logo" title="Briskel Bricks" class="c-header_logo"></a>
+            <a class="c-menu-hamburger-icon" onclick="HamburgerMenu()"><i class="fa fa-bars"></i></a>
+        </div>
+
+        <nav id="c-mobile-nav">
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="bricks.html">Bricks</a></li>
+                <li><a href="how_it_works.html">Princip</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img">English</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<main id="c-page">
+
+    <noscript class="c-warning">Prosím, povolte si javascript v prohlížeči. Některé funkce Vám jinak mohou být skryty.</noscript>
+
+    <p>something here testing</p>
+
+    <div class="c-slideshow-container">
+
+        <div class="c-slide c-slide-fade">
+            <div class="c-slide-number">1 / 3</div>
+            <img src="img/carousel1.JPG" alt="img" class="c-slide-img">
+            <div class="c-slide-text">Elektronická stavebnice pro děti</div>
+        </div>
+
+        <div class="c-slide c-slide-fade">
+            <div class="c-slide-number">2 / 3</div>
+            <img src="img/carousel2.JPG" alt="img" class="c-slide-img">
+            <div class="c-slide-text">Kompatibilní s Lego Duplo</div>
+        </div>
+
+        <div class="c-slide c-slide-fade">
+            <div class="c-slide-number">3 / 3</div>
+            <img src="img/carousel3.JPG" alt="img" class="c-slide-img">
+            <div class="c-slide-text">Pobyhlivé modely</div>
+        </div>
+
+        <a class="c-slide-prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="c-slide-next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div class="c-slideshow-dots">
+        <span class="c-slideshow-dot" onclick="currentSlide(1)"></span>
+        <span class="c-slideshow-dot" onclick="currentSlide(2)"></span>
+        <span class="c-slideshow-dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <h1 class="c-intro-heading">Co je Briskel Bricks?</h1>
+
+    <p class="c-intro">
+        Briskel Brick je elektronická stavebnice (nejen) pro děti. Naučí děti ovládat ventilátory, diody, motory, bzučák,
+        sestavit dálkově ovládané auto, používat senzory a mnoho dalšího.
+        Krabičky jsou kompatibilní s Lego Duplo.
+        Modely krabiček jsou k dispozici ke stažení pro 3D tisk. Stavebnice je open source.
+    </p>
+
+    <a href="bricks.html"><button class="c-btn">Chci zjistit víc</button></a>
+
+</main>
+
+<footer>
+    <p>
+        &copy; 2020 Martin Paták a Lucie Fiedlerová<br>
+        Background image by <a href="https://pixabay.com/users/semevent-4278751/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2458575">Semevent</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2458575">Pixabay</a>
+    </p>
+</footer>
+
+<script src="javascript/main.js"></script>
+
+</body>
+</html>

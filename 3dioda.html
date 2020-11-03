@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briskel Bricks - tříbarevná dioda</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/08ab134375.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <!--only for desktop and up-->
+    <div class="c-menu-desktop c-menu">
+        <a href="index.html"><img src="img/Briskel-logo.svg" alt="Briskel logo" title="Briskel Bricks" class="c-header_logo"></a>
+        <nav class="c-menu-desktop-nav">
+            <ul>
+                <li><a href="index.html">Domů</a><span class="c-menu_line"></span></li>
+                <li><a href="bricks.html">Bricks</a><span class="c-menu_line"></span></li>
+                <li><a href="how_it_works.html">Princip</a><span class="c-menu_line"></span></li>
+                <li><a href="kontakt.html">Kontakt</a><span class="c-menu_line"></span></li>
+            </ul>
+            <div class="c-menu_flag"><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img"></a></div>
+        </nav>
+    </div>
+
+    <!--only for tablet and low-->
+    <div class="c-menu-mobile c-menu">
+        <div class="c-menu-hamburger">
+            <a href="index.html"><img src="img/Briskel-logo.svg" alt="Briskel logo" title="Briskel Bricks" class="c-header_logo"></a>
+            <a class="c-menu-hamburger-icon" onclick="HamburgerMenu()"><i class="fa fa-bars"></i></a>
+        </div>
+
+        <nav id="c-mobile-nav">
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="bricks.html">Bricks</a></li>
+                <li><a href="how_it_works.html">Princip</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img">English</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<main id="c-page">
+
+    <noscript class="c-warning">Prosím, povolte si javascript v prohlížeči. Některé funkce Vám jinak mohou být skryty.</noscript>
+
+    <h1 class="c-page-first-heading">Tříbarevná dioda</h1>
+
+    <section class="c-section-brick_info">
+        <div class="c-brick_info-brick_box">
+            <img src="img/bricks/dioda_tribarevna.jpg" alt="tříbarevná dioda" class="c-brick_box-img">
+            <div>
+                <p>Modul obsahuje tříbarevnou diodu, ovládanou třemi vstupními signály:</p>
+                <ul>
+                    <li>1 - zelená</li>
+                    <li>2 - modrá</li>
+                    <li>3 - červená</li>
+                </ul>
+                <p>Vstupní hodnota ovlivňuje intenzitu jednotlivé LED. Pokud je hodnota negativní, příslušná dioda bliká.</p>
+
+            </div>
+        </div>
+
+        <img src="img/video.jpg" alt="video" class="c-video">
+    </section>
+
+
+    <section class="c-section_parameters">
+
+        <div class="c-section-heading" onclick="ShowHidePar()">
+            <h2>Parametry</h2>
+            <span id="c-par-open"><i class="fas fa-caret-up"></i></span>
+            <span id="c-par-close"><i class="fas fa-caret-down"></i></span>
+        </div>
+
+        <div id="c-parameters">
+            <table class="c-table">
+                <thead>
+                <tr>
+                    <th>Parametry</th>
+                    <th>Hodnota</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Velikost</td>
+                    <td>4x4</td>
+                </tr>
+                <tr>
+                    <td>Vstupní konektory</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Výstupní konektory</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Vysílané signály</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Přijímané signály</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Nerovnosti zespod</td>
+                    <td>Ano</td>
+                </tr>
+                <tr>
+                    <td>Nerovnosti shora</td>
+                    <td>Ne</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <section class="c-section_manual">
+
+        <div class="c-section-heading" onclick="ShowHideMan()">
+            <h2>Návod k výrobě</h2>
+            <span id="c-man-open"><i class="fas fa-caret-up"></i></span>
+            <span id="c-man-close"><i class="fas fa-caret-down"></i></span>
+        </div>
+
+        <div id="c-manual">
+            <img src="img/video.jpg" alt="video" class="c-video">
+
+            <h3>Seznam součástek potřebných k vyrobení:</h3>
+
+            <div class="c-vertical-scroll">
+                <table class="c-table">
+                    <thead>
+                    <tr>
+                        <th>Kategorie</th>
+                        <th>Popis</th>
+                        <th>Poznámka</th>
+                        <th>Počet</th>
+                        <th>Název</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>3D tisk</td>
+                        <td>Krabička top</td>
+                        <td>Tisk bez podpor</td>
+                        <td>1</td>
+                        <td>007_4x4_3xLed_RGB_singleLed_top.stl</td>
+                    </tr>
+                    <tr>
+                        <td>3D tisk</td>
+                        <td>Krabička spodek</td>
+                        <td>Tisk bez podpor</td>
+                        <td>1</td>
+                        <td>007_4x4_3xLed_RGB_singleLed_bot.stl</td>
+                    </tr>
+                    <tr>
+                        <td>3D tisk</td>
+                        <td>Podpora pod PCB</td>
+                        <td>Tisk bez podpor</td>
+                        <td>4</td>
+                        <td>000_pcb_distance.washer.stl</td>
+                    </tr>
+                    <tr>
+                        <td>Elektronika</td>
+                        <td>Osazený plošný spoj s konektory, naprogramovaný</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>019_RGB_LED_PCB</td>
+                    </tr>
+                    <tr>
+                        <td>Spojovacé materiál</td>
+                        <td>Šroub do plastu B2.5X16</td>
+                        <td></td>
+                        <td>4</td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+
+            <h3>Doporučený tisk</h3>
+            <div class="c-gallery">
+                <img src="img/kostka-nakres.jpg" alt="tisk diody">
+                <img src="img/kostka-nakres.jpg" alt="tisk diody">
+                <img src="img/kostka-nakres.jpg" alt="tisk diody">
+                <img src="img/kostka-nakres.jpg" alt="tisk diody">
+                <img src="img/kostka-nakres.jpg" alt="tisk diody">
+                <img src="img/kostka-nakres.jpg" alt="tisk diody">
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="c-page_electronics">
+
+        <div class="c-section-heading">
+            <h2>Elektronika</h2>
+            <i class="fas fa-caret-down"></i>
+        </div>
+
+    </section>
+
+    <section class="c-page_mechanics">
+
+        <div class="c-section-heading">
+            <h2>Mechanika</h2>
+            <i class="fas fa-caret-down"></i>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        &copy; 2020 Martin Paták a Lucie Fiedlerová<br>
+        Background image by <a href="https://pixabay.com/users/semevent-4278751/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2458575">Semevent</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2458575">Pixabay</a>
+    </p>
+</footer>
+
+<script src="javascript/main.js">setMobileTable('table')</script>
+
+</body>
+</html>

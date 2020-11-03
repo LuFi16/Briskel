@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briskel Bricks - princip</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/08ab134375.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <!--only for desktop and up-->
+    <div class="c-menu-desktop c-menu">
+        <a href="index.html"><img src="img/Briskel-logo.svg" alt="Briskel logo" title="Briskel Bricks" class="c-header_logo"></a>
+        <nav class="c-menu-desktop-nav">
+            <ul>
+                <li><a href="index.html">Domů</a><span class="c-menu_line"></span></li>
+                <li><a href="bricks.html">Bricks</a><span class="c-menu_line"></span></li>
+                <li><a href="how_it_works.html">Princip</a><span class="c-menu_line"></span></li>
+                <li><a href="kontakt.html">Kontakt</a><span class="c-menu_line"></span></li>
+            </ul>
+            <div class="c-menu_flag"><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img"></a></div>
+        </nav>
+    </div>
+
+    <!--only for tablet and low-->
+    <div class="c-menu-mobile c-menu">
+        <div class="c-menu-hamburger">
+            <a href="index.html"><img src="img/Briskel-logo.svg" alt="Briskel logo" title="Briskel Bricks" class="c-header_logo"></a>
+            <a class="c-menu-hamburger-icon" onclick="HamburgerMenu()"><i class="fa fa-bars"></i></a>
+        </div>
+
+        <nav id="c-mobile-nav">
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="bricks.html">Bricks</a></li>
+                <li><a href="how_it_works.html">Princip</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img">English</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<main id="c-page">
+
+    <noscript class="c-warning">Prosím, povolte si javascript v prohlížeči. Některé funkce Vám jinak mohou být skryty.</noscript>
+
+    <h1>Jak stavebnice funguje</h1>
+
+    <div class="c-page-text">
+        <p>Stavebnice obsahuje dva základní typy krabiček:</p>
+        <ul>
+            <li>Producenti (potenciometry, Joystick, senzory, ..) – krabičky které vytváření data – (označeny trojúhelníkem)</li>
+            <li>Konzumenti (Diody, ventilátor, motory, bzučák...) – krabičky které potřebují vstupní signál ke svému fungování (označeny kruhem)</li>
+        </ul>
+        <p>Příklad dole ukazuje zapojení Napájení -> 4x Potenciometer -> 3x LED -> Ventilátor -> Joystick (3 signály) -> 2x motor -> 4x Servomotor</p>
+
+        <ul>
+            <li>3x Led jsou ovládávy signály 1, 2, 3</li>
+            <li>Ventilátor je ovládán signálem 1</li>
+            <li>Joystick produkuje 3 signály. Tyto signály jsou dány na pozice 1, 2, 3. Signály z potenciometrů jsou posunuty na pozice 4, 5, 6, 7</li>
+            <li>2x Motor je ovládán signálem 1 a 2 (Joystick)</li>
+            <li>4x Servo motor potřebuje 4 vstupní signály – použije 3 signály z Joystick, čtvrtý signál je signál 1 z potenciometrů, který je nyní na pozici 4</li>
+        </ul>
+    </div>
+
+    <img src="img/princip.PNG" alt="princip" class="c-wide_img">
+
+    <div class="c-page-text">
+        <p>Maximální počet signálu je 12. Při překročení tohoto počtu se signály začínají zahazovat.</p>
+    </div>
+
+
+</main>
+
+<footer>
+    <p>
+        &copy; 2020 Martin Paták a Lucie Fiedlerová<br>
+        Background image by <a href="https://pixabay.com/users/semevent-4278751/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2458575">Semevent</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2458575">Pixabay</a>
+    </p>
+</footer>
+
+<script src="javascript/main.js"></script>
+
+</body>
+</html>

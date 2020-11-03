@@ -1,0 +1,81 @@
+
+.c-cards{
+  @media (min-width: 801px) and (max-width: 1360px) {
+    display: none;
+  }
+  @media (min-width: 1361px){
+    display: flex;
+  }
+  @media (max-width: $size-tablet) {
+    display: none;
+  }
+  @media (min-width: $size-tablet) {
+  }
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: flex-start;
+  width: 51rem;
+  padding: 0 16rem; //$size-h-padding + $size-text-left-margin
+}
+
+.c-card{
+  width: 15rem;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  margin: 1rem;
+  text-decoration: none;
+  background-color: $color-light;
+  color: $color-text-classic;
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+  p{
+    padding: 1.5rem;
+    margin: 0;
+  }
+}
+
+.c-card:hover{
+  position: relative;
+  top: -1rem;
+  color: $color-text-classic;
+}
+
+/* for tablet and low */
+.c-bricks-ul{
+  @media (min-width: 801px) and (max-width: 1360px) {
+    margin-right: 6rem;
+    margin-left: 6rem;
+  }
+  @media (min-width: 1361px){
+    display: none;
+  }
+  @media (min-width: $size-tablet) {
+  }
+  padding: 0;
+  margin: 0;
+  li{
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    a{
+      text-transform: uppercase;
+      display: block;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 14px;
+      padding: 1rem;
+    }
+    a:hover{
+      background-color: $color-section-heading-hover;
+      color: $color-text-classic;
+    }
+  }
+}

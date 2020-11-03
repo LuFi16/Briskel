@@ -1,0 +1,19 @@
+
+footer{
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding: 0.1rem 0;
+  margin: 0;
+  background-color: $color-footer-bcg;
+  color: $color-light;
+
+  p{
+    margin: 1rem;
+  }
+  @media (min-width: $size-tablet) {
+  }
+  @media (max-width: $size-tablet) {
+    font-size: 12px;
+  }
+}

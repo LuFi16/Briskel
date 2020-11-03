@@ -1,0 +1,312 @@
+
+main{
+  box-sizing: border-box;
+  background-color: $color-light;
+  @media (min-width: 801px) and (max-width: 1360px) {
+    width: calc(100% - 4rem);
+    >h1, >h2, >h3, >h4, >h5, >p{
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+  @media (min-width: 1361px){
+    width: $size-page;
+    >h1, >h2, >h3, >h4, >h5, >p{
+      padding-left: $size-indent-from-left-border;
+      padding-right: $size-indent-from-left-border;
+    }
+    >ul{
+      padding-left: $size-indent-from-left-border + 2.5rem;
+    }
+  }
+  @media (min-width: $size-tablet) {
+    margin: 0 auto 5rem auto;
+    padding: 5rem 0;
+    border-radius: 0 0 30px 30px;
+  }
+  @media (max-width: $size-tablet) {
+    width: calc(100% - 4rem);
+    margin: 0 auto 2rem auto;
+    padding: 2rem;
+    border-radius: 30px;
+    font-size: 14px;
+    > h1{
+      margin-top: 0;
+    }
+  }
+  @media (max-width: 400px) {
+    width: calc(100% - 2rem);
+    margin: 0 auto 1rem auto;
+  }
+}
+
+
+.c-page-first-heading{
+  @media (min-width: $size-tablet) {
+    margin-bottom: 3rem;
+  }
+  @media (max-width: $size-tablet) {
+  }
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $size-bottom-indent;
+  /*>p, >h2, >h3, >h4, >h5, >table, >ul, >ol{
+   margin-left: $size-indent-from-left-border;
+   margin-right: $size-indent-from-left-border;
+  }
+  > img{
+    margin: auto;
+  }*/
+}
+
+.c-section-heading{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  @media (min-width: 801px) and (max-width: 1360px) {
+    margin: 1rem 4rem;
+  }
+  @media (min-width: 1361px){
+    margin: 1rem $size-indent-section-heading 1rem $size-indent-section-heading;
+  }
+  @media (min-width: $size-tablet) {
+  }
+  @media (max-width: $size-tablet) {
+    justify-content: space-between;
+    margin: 0 -1rem 1rem -1rem;
+    padding: 0.5rem 1rem;
+  }
+  h2{
+    margin: 0;
+  }
+  i{
+    font-size: 28px;
+    @media (min-width: $size-tablet) {
+      margin-left: 4rem;
+    }
+    @media (max-width: $size-tablet) {
+    }
+  }
+}
+
+.c-section-heading:hover{
+  background-color: $color-section-heading-hover;
+}
+
+#c-parameters{
+  display: block;
+}
+
+#c-parameters, #c-manual{
+  text-align: center;
+  @media (min-width: 801px) and (max-width: 1360px) {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+  @media (min-width: 1361px){
+    margin-left: $size-indent-from-left-border;
+    margin-right: $size-indent-from-left-border;
+    padding-left: 2rem;
+  }
+  @media (min-width: $size-tablet) {
+  }
+  @media (max-width: $size-tablet) {
+  }
+  h2, h3, h4, h5, p, ul, ol{
+    text-align: left;
+  }
+  h2, h3, h4, h5{
+    @media (min-width: $size-tablet) {
+      margin-left: -2rem;
+    }
+    @media (max-width: $size-tablet) {
+    }
+  }
+}
+
+#c-par-open, #c-man-open{
+  display: block;
+}
+
+#c-par-close, #c-man-close{
+  display: none;
+}
+
+
+.c-video{
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: $size-tablet) {
+    width: $size-video-width;
+  }
+  @media (max-width: $size-tablet) {
+    width: $size-mobile-video-width;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1360px) {
+  .c-vertical-scroll{
+  overflow-x: auto;
+}
+}
+@media (min-width: 1361px){
+}
+@media (min-width: $size-tablet) {
+}
+@media (max-width: $size-tablet) {
+  .c-vertical-scroll{
+    overflow-x: auto;
+  }
+}
+
+.c-table{
+  box-sizing: border-box;
+  border-collapse: collapse;
+  //margin-left: $size-indent-from-left-border + $size-content-indent-left;
+  //margin-left: 2rem;
+
+  tr{
+    border-top: 1px solid $color-line;
+    border-bottom: 1px solid $color-line;
+    th, td{
+      text-align: left;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+}
+
+.c-gallery{
+ /* margin-left: $size-indent-from-left-border + $size-content-indent-left;
+  margin-right: $size-indent-from-left-border;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  img{
+    height: auto;
+    @media (min-width: $size-tablet) {
+      width: 12rem;
+      margin: 0 0.5rem 0.5rem 0;
+    }
+    @media (max-width: $size-tablet) {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.c-wide_img{
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  @media (min-width: $size-tablet) {
+    padding: 1rem 2rem;
+  }
+  @media (max-width: $size-tablet) {
+    padding: 1rem 0;
+  }
+}
+
+                          //first section - about brick
+.c-section-brick_info{
+  display: flex;
+  flex-direction: column;
+}
+.c-brick_info-brick_box{
+  display: flex;
+  @media (min-width: 801px) and (max-width: 1360px) {
+    flex-direction: column;
+    margin-right: 6rem;
+    margin-left: 6rem;
+  }
+  @media (min-width: 1361px){
+    margin: 0 $size-indent-from-left-border 2rem $size-indent-from-left-border + $size-content-indent-left;
+    flex-direction: row;
+  }
+  @media (min-width: $size-tablet) {
+  }
+  @media (max-width: $size-tablet) {
+    flex-direction: column;
+  }
+}
+.c-brick_box-img{
+  height: auto;
+  @media (min-width: $size-tablet) {
+    width: $size-img-width;
+    margin-right: 3rem;
+  }
+  @media (max-width: $size-tablet) {
+    width: $size-mobile-img-width;
+  }
+}
+
+                         //section "Parametry"
+.c-section_parameters{
+  .c-table{
+    @media (min-width: $size-tablet) {
+      width: 20rem;
+    }
+    @media (max-width: $size-tablet) {
+      width: 100%;
+    }
+  th, td{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  }
+}
+
+                        //section "Návod k výrobě"
+.c-section_manual{
+  .c-video{
+    margin-bottom: $size-bottom-indent;
+  }
+  .c-table{
+    box-sizing: border-box;
+    margin-bottom: $size-bottom-indent;
+    @media (min-width: $size-tablet) {
+    }
+    @media (max-width: $size-tablet) {
+      width: 100%;
+      overflow: hidden;
+    }
+    th, td{
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    th:first-child, td:first-child{
+      padding-left: 1rem;
+    }
+    th:last-child, td:last-child{
+      padding-right: 1rem;
+    }
+  }
+}
+
+                        //section "Elektronika"
+.c-page_electronics{}
+
+
+                        //section "Mechanika"
+.c-page_mechanics{}
+
+
+.c-page-text{
+  @media (min-width: 801px) and (max-width: 1360px) {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+  @media (min-width: 1361px){
+    margin-left: $size-indent-from-left-border + $size-content-indent-left;
+    margin-right: $size-indent-from-left-border;
+  }
+  @media (min-width: $size-tablet) {
+  }
+  @media (max-width: $size-tablet) {
+  }
+}
