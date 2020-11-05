@@ -54,15 +54,34 @@ a:hover, a:active {
 a:focus {
   color: #e2b301; }
 
-.c-warning {
+.c-warning, .c-warning-info {
   box-sizing: border-box;
   display: block;
   padding: 1rem;
-  margin: -5rem 0 0 0;
+  margin: -5rem 0 5rem 0;
   width: 100%;
   text-align: center;
-  background-color: rgba(226, 179, 1, 0.8);
   font-weight: bold; }
+  @media (min-width: 800px) {
+    .c-warning, .c-warning-info {
+      margin: -5rem 0 5rem 0;
+      width: 100%;
+      padding: 1rem; } }
+  @media (max-width: 800px) {
+    .c-warning, .c-warning-info {
+      margin: -2rem -2rem 2rem -2rem;
+      width: calc(100% + 4rem);
+      padding: 1rem 2rem; } }
+
+.c-warning {
+  background-color: rgba(226, 179, 1, 0.8); }
+  @media (max-width: 800px) {
+    .c-warning {
+      border-top-right-radius: 2rem;
+      border-top-left-radius: 2rem; } }
+
+.c-warning-info {
+  background-color: rgba(226, 179, 1, 0.4); }
 
 .c-header_logo {
   height: auto; }

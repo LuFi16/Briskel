@@ -1,4 +1,26 @@
 
+/* warning and info styling (general function) */
+let gWarning = document.getElementById("c-warning")
+let gWarningInfo = document.getElementById("c-warning-info")
+let gScreenWidth = parseInt(window.innerWidth);
+if (gWarning.style.display === "none") {
+    if(gScreenWidth >= "800px"){
+        gWarningInfo.style.borderTopRightRadius = "0";
+        gWarningInfo.style.borderTopLeftRadius = "0";
+    }
+    if(gScreenWidth < "800px"){
+        gWarningInfo.style.borderTopRightRadius = "2rem";
+        gWarningInfo.style.borderTopLeftRadius = "2rem";
+    }
+
+} else {
+    gWarningInfo.style.borderTopRightRadius = "0";
+    gWarningInfo.style.borderTopLeftRadius = "0";
+}
+
+
+
+/* menu on smaller screens */
 function HamburgerMenu(){
     let x = document.getElementById("c-mobile-nav");
     let y = document.getElementById("c-page");
@@ -14,7 +36,7 @@ function HamburgerMenu(){
 
 
 
-
+/* functions for opening and close sections on page (Parameters, Manual, Electronics) */
 
 function ShowHidePar(){
     let content = document.getElementById("c-parameters")
@@ -64,115 +86,93 @@ function ShowHideEle(){
     }
 }
 
-
-
-
-
-
+/* SLIDER on main page*/
 /* Slideshow JS code from: https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9*/
 
-let slideIndex = 1;
-let myTimer;
-let slideshowContainer;
+let gSlideIndex = 1;
+let gMyTimer;
+let gSlideshowContainer;
 
 window.addEventListener("load",function() {
-    showSlides(slideIndex);
-    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+    showSlides(gSlideIndex);
+    gMyTimer = setInterval(function(){plusSlides(1)}, 4000);
 
     //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+    gSlideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
 
     //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
     // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
 
-    slideshowContainer.addEventListener('mouseenter', pause)
-    slideshowContainer.addEventListener('mouseleave', resume)
+    gSlideshowContainer.addEventListener('mouseenter', pause)
+    gSlideshowContainer.addEventListener('mouseleave', resume)
 })
 
 // NEXT AND PREVIOUS CONTROL
 function plusSlides(n){
-    clearInterval(myTimer);
+    clearInterval(gMyTimer);
     if (n < 0){
-        showSlides(slideIndex -= 1);
+        showSlides(gSlideIndex -= 1);
     } else {
-        showSlides(slideIndex += 1);
+        showSlides(gSlideIndex += 1);
     }
 
     //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
 
     if (n === -1){
-        myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+        gMyTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
     } else {
-        myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+        gMyTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
     }
 }
 
 //Controls the current slide and resets interval if needed
 function currentSlide(n){
-    clearInterval(myTimer);
-    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
-    showSlides(slideIndex = n);
+    clearInterval(gMyTimer);
+    gMyTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+    showSlides(gSlideIndex = n);
 }
 
 function showSlides(n){
     let i;
     let slides = document.getElementsByClassName("c-slide");
     let dots = document.getElementsByClassName("c-slideshow-dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) {gSlideIndex = 1}
+    if (n < 1) {gSlideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" dot-active", "");
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " dot-active";
+    slides[gSlideIndex-1].style.display = "block";
+    dots[gSlideIndex-1].className += " dot-active";
 }
 
 pause = () => {
-    clearInterval(myTimer);
+    clearInterval(gMyTimer);
 }
 
 resume = () =>{
-    clearInterval(myTimer);
-    myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+    clearInterval(gMyTimer);
+    gMyTimer = setInterval(function(){plusSlides(gSlideIndex)}, 4000);
 }
 
 
 
-/*
-//JUST MANUAL SLIDESHOW
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("c-slide");
-    let dots = document.getElementsByClassName("c-slideshow-dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" dot-active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " dot-active";
-}
-*/
-
-
-function NeniKDispozici(){      /* delete when project is complete */
+/* can be deleted when project is complete */
+function NeniKDispozici(){
     alert("Omlouváme se, ale tento odkaz nyní není k dispozici. Funkční je prozatím jen Tříbarevná dioda");
 }
+function NeniKDispoziciJazyk(){
+    alert("Omlouváme se, ale v současné době není možné přepnout stránku do jiného jazyka. Stránka je ve vývoji.\n\n" +
+          "We're sorry, but it\'s not possible to switch the page to another language now. This site is under construction.");
+}
+
+
+
+
+
+
+
+
+
