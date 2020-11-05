@@ -101,7 +101,7 @@ section{
   display: block;
 }
 
-#c-parameters, #c-manual{
+#c-parameters, #c-manual, #c-electronics{
   text-align: center;
   @media (min-width: 801px) and (max-width: 1360px) {
     margin-left: 6rem;
@@ -128,11 +128,11 @@ section{
   }
 }
 
-#c-par-open, #c-man-open{
+#c-par-open, #c-man-open, #c-ele-open{
   display: block;
 }
 
-#c-par-close, #c-man-close{
+#c-par-close, #c-man-close, #c-ele-close{
   display: none;
 }
 

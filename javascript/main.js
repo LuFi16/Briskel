@@ -48,6 +48,22 @@ function ShowHideMan(){
     }
 }
 
+function ShowHideEle(){
+    let content = document.getElementById("c-electronics")
+    let arrowUp = document.getElementById("c-ele-open")
+    let arrowDown = document.getElementById("c-ele-close")
+
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        arrowUp.style.display = "block";
+        arrowDown.style.display = "none";
+    } else {
+        content.style.display = "none";
+        arrowUp.style.display = "none";
+        arrowDown.style.display = "block";
+    }
+}
+
 
 
 
