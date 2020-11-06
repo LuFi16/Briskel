@@ -20,7 +20,7 @@
                 <li><a href="how_it_works.html">Princip</a><span class="c-menu_line"></span></li>
                 <li><a href="kontakt.html">Kontakt</a><span class="c-menu_line"></span></li>
             </ul>
-            <div class="c-menu_flag"><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img"></a></div>
+            <div class="c-menu_flag" onclick="NeniKDispoziciJazyk()"><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img"></a></div>
         </nav> 
     </div>
 
@@ -47,12 +47,26 @@
 <main id="c-page">
 
     <noscript class="c-warning">Prosím, povolte si javascript v prohlížeči. Některé funkce Vám jinak mohou být skryty.</noscript>
+    <p class="c-warning-info">Vítejte na našich stránkách! Berte prosím na vědomí, že stránky jsou právě ve vývoji a mohou obsahovat chyby.</p>
 
     <h1 class="c-page-first-heading">Tříbarevná dioda</h1>
 
     <section class="c-section-brick_info">
         <div class="c-brick_info-brick_box">
-            <img src="img/bricks/dioda_tribarevna.jpg" alt="tříbarevná dioda" class="c-brick_box-img">
+
+            <!--<img src="img/bricks/dioda_tribarevna.jpg" alt="tříbarevná dioda" class="c-brick_box-img">-->
+            <div class="c-mini-gallery">
+                <img class="c-mini-gallery-big-img" id="mini-gallery-big-img" src="img/bricks/dioda_tribarevna.jpg" alt="img">
+
+                <div class="c-mini-gallery-small-imgs">
+                    <img src="img/bricks/dioda_tribarevna.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="img/bricks/potenciometr.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="img/bricks/bzucak.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="img/bricks/rozbocovac.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="img/bricks/joystick.jpg" alt="img" onclick="miniGallery(this);">
+                </div>
+            </div>
+
             <div>
                 <p>Modul obsahuje tříbarevnou diodu, ovládanou třemi vstupními signály:</p>
                 <ul>
@@ -65,8 +79,13 @@
             </div>
         </div>
 
-        <img src="img/video.jpg" alt="video" class="c-video">
-    </section>
+        <!--<img src="img/video.jpg" alt="video" class="c-video">-->
+        <div class="c-video-wrapper">
+            <iframe class="c-video" src="https://www.youtube.com/embed/EBJIcdcQk-M" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen></iframe>
+        </div>
+         </section>
 
 
 
@@ -79,7 +98,7 @@
         </div>
 
         <div id="c-manual">
-            <img src="img/video.jpg" alt="video" class="c-video">
+            <!--<img src="img/video.jpg" alt="video" class="c-video">-->
 
             <h3>Seznam součástek potřebných k vyrobení:</h3>
 
@@ -98,31 +117,52 @@
                     <tbody>
                     <tr>
                         <td>3D tisk</td>
-                        <td><img src="downloads/boards/019_4x4_3xLed_1xRGB/007_4x4_3xLed_RGB_singleLed_top_1_small.JPG" alt="top"></td>
+                        <td>
+                            <img src="downloads/boards/019_4x4_3xLed_1xRGB/007_4x4_3xLed_RGB_singleLed_top_1_small.JPG"
+                                 alt="top" >  <!--onclick="cOpenModal();currentSlide(1)"-->
+                        </td>
                         <td>Krabička top</td>
                         <td>Tisk bez podpor</td>
                         <td>1</td>
-                        <td><a href="downloads/boards/019_4x4_3xLed_1xRGB/007_4x4_3xLed_RGB_singleLed_top.stl">007_4x4_3xLed_RGB_singleLed_top.stl</a></td>
+                        <td>
+                            <a href="downloads/boards/019_4x4_3xLed_1xRGB/007_4x4_3xLed_RGB_singleLed_top.stl">
+                                007_4x4_3xLed_RGB_singleLed_top.stl</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>3D tisk</td>
-                        <td><img src="downloads/common/mechanics/000_4x4_BottomStandard_1_small.jpg" alt="bot"> </td>
+                        <td>
+                            <img src="downloads/common/mechanics/000_4x4_BottomStandard_1_small.jpg"
+                                 alt="bot">
+                        </td>
                         <td>Krabička spodek</td>
                         <td>Tisk bez podpor</td>
                         <td>1</td>
-                        <td><a href="downloads/common/mechanics/000_4x4_BottomStandard.stl">000_4x4_BottomStandard.stl</a></td>
+                        <td>
+                            <a href="downloads/common/mechanics/000_4x4_BottomStandard.stl">
+                                000_4x4_BottomStandard.stl</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>3D tisk</td>
-                        <td><img src="downloads/common/mechanics/000_pcb_distance_washer_1_small.jpg" alt="washer"> </td>
+                        <td>
+                            <img src="downloads/common/mechanics/000_pcb_distance_washer_1_small.jpg"
+                                 alt="washer">
+                        </td>
                         <td>Podpora pod PCB</td>
                         <td>Tisk bez podpor</td>
                         <td>4</td>
-                        <td><a href="downloads/common/mechanics/000_pcb_distance_washer.stl">000_pcb_distance_washer.stl</a></td>
+                        <td>
+                            <a href="downloads/common/mechanics/000_pcb_distance_washer.stl">
+                                000_pcb_distance_washer.stl</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Elektronika</td>
-                        <td><img src="downloads/boards/019_4x4_3xLed_1xRGB/007_4x4_3xLed_RGB_singleLed_PCB_1_small.jpg" alt="pcb"></td>
+                        <td>
+                            <img src="downloads/boards/019_4x4_3xLed_1xRGB/007_4x4_3xLed_RGB_singleLed_PCB_1_small.jpg"
+                                 alt="pcb">
+                        </td>
                         <td>Osazený plošný spoj s konektory, naprogramovaný</td>
                         <td></td>
                         <td>1</td>
@@ -130,7 +170,10 @@
                     </tr>
                     <tr>
                         <td>Spojovací materiál</td>
-                        <td><img src="downloads/common/mechanics/screw_B2.5X16_small.jpg" alt="screw"></td>
+                        <td>
+                            <img src="downloads/common/mechanics/screw_B2.5X16_small.jpg"
+                                 alt="screw">
+                        </td>
                         <td>Šroub do plastu B2.5X16</td>
                         <td></td>
                         <td>4</td>
@@ -149,11 +192,13 @@
 
    <section class="c-page_electronics">
 
-        <div class="c-section-heading">
+        <div class="c-section-heading" onclick="ShowHideEle()">
             <h2>Elektronika</h2>
-            <i class="fas fa-caret-down"></i>
+            <span id="c-ele-open"><i class="fas fa-caret-up"></i></span>
+            <span id="c-ele-close"><i class="fas fa-caret-down"></i></span>
         </div>
-        <div id="c-manual">
+
+        <div id="c-electronics">
             <p>
                 Plošný spoj je stejný pro tříbarevnou diodu i semafor, liší se pouze osazením through hole součástek - <a href="downloads/boards/019_4x4_3xLed_1xRGB/019_4x4_3xLed_1xRGB_semaphore.pdf" target="_blank">schema</a>
             <p>
