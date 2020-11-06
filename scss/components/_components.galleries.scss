@@ -1,0 +1,71 @@
+
+
+/* MINI GALLERY - on top of page with the given brick */
+
+.c-mini-gallery{
+  @media (min-width: 801px) and (max-width: 1360px) {
+    width: $size-mini-gallery-width-mobile;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  @media (min-width: 1361px){
+    margin-right: 3rem;
+  }
+  @media (min-width: $size-tablet) {
+  }
+  @media (max-width: $size-tablet) {
+    width: $size-mini-gallery-width-mobile;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.c-mini-gallery-small-imgs{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+  @media (max-width: 1360px) {
+    justify-content: center;
+  }
+  @media (min-width: 1361px){
+    justify-content: space-between;
+  }
+  img{
+    opacity: 0.7;
+    cursor: pointer;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    @media (max-width: 1360px) {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem;
+    }
+    @media (max-width: 450px){
+      width: 30%;
+      height: auto;
+    }
+    @media (min-width: 451px){
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
+
+.c-mini-gallery-big-img{
+  @media (max-width: 450px){
+    width: 100%;
+    height: auto;
+  }
+  @media (min-width: 451px){
+    width: $size-mini-gallery-width;
+    height: 15rem;
+  }
+  object-fit: cover;
+}

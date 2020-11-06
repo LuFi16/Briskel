@@ -287,66 +287,6 @@ img.hover-shadow {
 .c-lightbox-img-small:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
-/* MINI GALLERY - on top of page with the given brick */
-@media (min-width: 801px) and (max-width: 1360px) {
-  .c-mini-gallery {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; } }
-@media (min-width: 1361px) {
-  .c-mini-gallery {
-    margin-right: 3rem; } }
-@media (max-width: 800px) {
-  .c-mini-gallery {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; } }
-
-.c-mini-gallery-small-imgs {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-top: 0.5rem;
-  flex-wrap: wrap; }
-  @media (max-width: 1360px) {
-    .c-mini-gallery-small-imgs {
-      justify-content: center; } }
-  @media (min-width: 1361px) {
-    .c-mini-gallery-small-imgs {
-      justify-content: space-between; } }
-  .c-mini-gallery-small-imgs img {
-    opacity: 0.7;
-    cursor: pointer;
-    object-fit: cover;
-    margin-bottom: 0.5rem; }
-    @media (max-width: 1360px) {
-      .c-mini-gallery-small-imgs img {
-        margin-right: 0.25rem;
-        margin-left: 0.25rem; } }
-    @media (max-width: 450px) {
-      .c-mini-gallery-small-imgs img {
-        width: 30%;
-        height: auto; } }
-    @media (min-width: 451px) {
-      .c-mini-gallery-small-imgs img {
-        width: 4.5rem;
-        height: 4.5rem; } }
-  .c-mini-gallery-small-imgs img:hover {
-    opacity: 1; }
-
-.c-mini-gallery-big-img {
-  object-fit: cover; }
-  @media (max-width: 450px) {
-    .c-mini-gallery-big-img {
-      width: 100%;
-      height: auto; } }
-  @media (min-width: 451px) {
-    .c-mini-gallery-big-img {
-      width: 20rem;
-      height: 15rem; } }
-
 .c-header_logo {
   height: auto; }
   @media (min-width: 800px) {
@@ -936,5 +876,65 @@ section {
     .c-bricks-ul li a:hover {
       background-color: rgba(0, 0, 0, 0.2);
       color: #000000; }
+
+/* MINI GALLERY - on top of page with the given brick */
+@media (min-width: 801px) and (max-width: 1360px) {
+  .c-mini-gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+@media (min-width: 1361px) {
+  .c-mini-gallery {
+    margin-right: 3rem; } }
+@media (max-width: 800px) {
+  .c-mini-gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+.c-mini-gallery-small-imgs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 0.5rem;
+  flex-wrap: wrap; }
+  @media (max-width: 1360px) {
+    .c-mini-gallery-small-imgs {
+      justify-content: center; } }
+  @media (min-width: 1361px) {
+    .c-mini-gallery-small-imgs {
+      justify-content: space-between; } }
+  .c-mini-gallery-small-imgs img {
+    opacity: 0.7;
+    cursor: pointer;
+    object-fit: cover;
+    margin-bottom: 0.5rem; }
+    @media (max-width: 1360px) {
+      .c-mini-gallery-small-imgs img {
+        margin-right: 0.25rem;
+        margin-left: 0.25rem; } }
+    @media (max-width: 450px) {
+      .c-mini-gallery-small-imgs img {
+        width: 30%;
+        height: auto; } }
+    @media (min-width: 451px) {
+      .c-mini-gallery-small-imgs img {
+        width: 4.5rem;
+        height: 4.5rem; } }
+  .c-mini-gallery-small-imgs img:hover {
+    opacity: 1; }
+
+.c-mini-gallery-big-img {
+  object-fit: cover; }
+  @media (max-width: 450px) {
+    .c-mini-gallery-big-img {
+      width: 100%;
+      height: auto; } }
+  @media (min-width: 451px) {
+    .c-mini-gallery-big-img {
+      width: 20rem;
+      height: 15rem; } }
 
 /*# sourceMappingURL=main.css.map */
