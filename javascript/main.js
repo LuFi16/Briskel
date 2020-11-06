@@ -217,3 +217,19 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
 }*/
+
+
+
+
+
+
+
+
+
+
+
+function miniGallery(imgs) {
+    let bigImg = document.getElementById("mini-gallery-big-img");
+    bigImg.src = imgs.src;
+    bigImg.parentElement.style.display = "block";
+}
