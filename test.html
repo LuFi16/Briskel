@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <script src="https://kit.fontawesome.com/08ab134375.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 <header>
     <!--only for desktop and up-->
@@ -53,132 +54,42 @@
 
 
 
-<div class="c-mini-gallery">
-    <img class="c-mini-gallery-big-img" id="expandedImg" src="img/carousel3.JPG" alt="img">
-
-    <div class="c-mini-gallery-small-imgs">
-        <img src="img/carousel1.JPG" alt="img" onclick="tmyFunction(this);">
-        <img src="img/carousel2.JPG" alt="img" onclick="tmyFunction(this);">
-        <img src="img/carousel3.JPG" alt="img" onclick="tmyFunction(this);">
-        <img src="img/carousel2.JPG" alt="img" onclick="tmyFunction(this);">
-    </div>
-</div>
 
 
 
 
 
+    <img src="img/kostka-nakres.jpg" class="c-lightbox-starter" onclick="showLightbox();tentoSlide(1)">
+    <img src="img/favicon.png" class="c-lightbox-starter" onclick="showLightbox();tentoSlide(2)">
 
 
 
-
-
-
-
-
-
-
-
-
-
-    <!-- Images used to open the lightbox -->
-   <!-- <div class="row">
-        <div class="column">
-            <img src="img/carousel1.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
-        </div>
-        <div class="column">
-            <img src="img/carousel2.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow">
-        </div>
-        <div class="column">
-            <img src="img/carousel3.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow">
-        </div>
-        <div class="column">
-            <img src="img/carousel2.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow">
-        </div>
-    </div>-->
-
-    <!-- The Modal/Lightbox -->
-    <!--<div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-
-            <div class="mySlides">
-                <div class="numbertext">1 / 4</div>
-                <img src="img/carousel1.JPG" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">2 / 4</div>
-                <img src="img/carousel2.JPG" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">3 / 4</div>
-                <img src="img/carousel3.JPG" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">4 / 4</div>
-                <img src="img/carousel2.JPG" style="width:100%">
-            </div>
-
-            &lt;!&ndash; Next/previous controls &ndash;&gt;
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            &lt;!&ndash; Caption text &ndash;&gt;
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
-
-            &lt;!&ndash; Thumbnail image controls &ndash;&gt;
-            <div class="column">
-                <img class="demo" src="img/carousel1.JPG" onclick="currentSlide(1)" alt="Nature">
-            </div>
-
-            <div class="column">
-                <img class="demo" src="img/carousel2.JPG" onclick="currentSlide(2)" alt="Snow">
-            </div>
-
-            <div class="column">
-                <img class="demo" src="img/carousel3.JPG" onclick="currentSlide(3)" alt="Mountains">
-            </div>
-
-            <div class="column">
-                <img class="demo" src="img/carousel2.JPG" onclick="currentSlide(4)" alt="Lights">
-            </div>
-        </div>
-    </div>-->
-
-
-
-
-
-
-
-
-
-
-
-    <!--<div class="c-lightbox-wrapper">
-        <span class="c-lightbox-close">&times;</span>
+    <div class="c-lightbox-wrapper" id="c-lightbox-wrapper">
+        <span class="c-lightbox-close" id="c-lightbox-close" onclick="hideLightbox()">&times;</span>
 
         <div class="c-lightbox-img-big-wrapper">
-            <a class="c-lightbox-prev">&#10094;</a>
-            <img src="img/carousel1.JPG" class="c-lightbox-img-big">
-            <a class="c-lightbox-next">&#10095;</a>
+            <a class="c-lightbox-prev" onclick="dalsiSLide(-1)">&#10094;</a>
+            <img src="img/carousel1.JPG" class="c-lightbox-img-big" id="img1">
+            <img src="img/carousel2.JPG" class="c-lightbox-img-big" id="img2">
+            <img src="img/carousel3.JPG" class="c-lightbox-img-big" id="img3">
+            <img src="img/carousel1.JPG" class="c-lightbox-img-big" id="img4">
+            <img src="img/carousel2.JPG" class="c-lightbox-img-big" id="img5">
+            <a class="c-lightbox-next" onclick="dalsiSLide(1)">&#10095;</a>
         </div>
 
 
         <div class="c-lightbox-images-small-wrapper">
-            <img src="img/carousel1.JPG" class="c-lightbox-img-small">
-            <img src="img/carousel2.JPG" class="c-lightbox-img-small">
-            <img src="img/carousel3.JPG" class="c-lightbox-img-small">
-            <img src="img/carousel1.JPG" class="c-lightbox-img-small">
-            <img src="img/carousel2.JPG" class="c-lightbox-img-small">
+            <img src="img/carousel1.JPG" class="c-lightbox-img-small" onclick="tentoSlide(1)">
+            <img src="img/carousel2.JPG" class="c-lightbox-img-small" onclick="tentoSlide(2)">
+            <img src="img/carousel3.JPG" class="c-lightbox-img-small" onclick="tentoSlide(3)">
+            <img src="img/carousel1.JPG" class="c-lightbox-img-small" onclick="tentoSlide(4)">
+            <img src="img/carousel2.JPG" class="c-lightbox-img-small" onclick="tentoSlide(5)">
         </div>
 
-    </div>-->
+    </div>
+
+
+
 
 
 
@@ -191,7 +102,7 @@
     </p>
 </footer>
 
-<script src="javascript/main.js">setMobileTable('table')</script>
+<script src="javascript/main.js"></script>
 
 </body>
 </html>
