@@ -22,13 +22,18 @@ $color-warning-info-bcg: transparentize($color-primary-yellow, 0.6);
 
 $color-slideshow-bcg: #000000;
 $color-slideshow-arrows: #ffffff;
-$color-slideshow-items-bcg: transparentize(#000000, 0.3);
+$color-slideshow-items-bcg: transparentize(#000000, 0.2);
 $color-slideshow-dot-active: #717171;
 $color-slideshow-dot-nonactive: #bbbbbb;
 
 $color-carousel-legend-bcg: transparentize(#000000, 0.3); //delete
 
 $color-section-heading-hover:  transparentize(#000000, 0.8);
+
+$color-biggest-img-bcg: #000000;
+$color-biggest-img-close: #ffffff;
+$color-biggest-img-close-hover-bcg: transparentize(#FFFFFF, 0.6);
+$color-biggest-img-close-hover: #000000;
 
 $color-footer-bcg: #160e06;
 

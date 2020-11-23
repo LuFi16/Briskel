@@ -169,6 +169,14 @@ function NeniKDispoziciJazyk(){
 }
 
 
+function biggestImgClose(){
+    document.getElementById("c-close-object").style.display = "none";
+}
+function biggestImgOpen(){
+    document.getElementById("c-close-object").style.display = "flex";
+}
+
+
 
 
 function miniGallery(imgs) {
