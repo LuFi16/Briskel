@@ -59,13 +59,13 @@
 }
 
 .c-mini-gallery-big-img{
-  @media (max-width: 450px){
+  @media (max-width: 600px){
     width: 100%;
     height: auto;
   }
   @media (min-width: 451px){
     width: $size-mini-gallery-width;
-    height: 15rem;
+    height: 20rem;
   }
   object-fit: cover;
 }
