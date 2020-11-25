@@ -836,13 +836,13 @@ section {
 
 .c-mini-gallery-big-img {
   object-fit: cover; }
-  @media (max-width: 450px) {
+  @media (max-width: 600px) {
     .c-mini-gallery-big-img {
       width: 100%;
       height: auto; } }
   @media (min-width: 451px) {
     .c-mini-gallery-big-img {
       width: 20rem;
-      height: 15rem; } }
+      height: 20rem; } }
 
 /*# sourceMappingURL=main.css.map */
