@@ -159,6 +159,9 @@ section{
       height: 100%;
     }
   }
+  .c-video:hover, .c-video:active, .c-video:focus{
+    outline: none;
+  }
 }
 
 @media (min-width: 801px) and (max-width: 1360px) {
@@ -242,32 +245,6 @@ section{
   height: auto;
   padding: 0 1rem;
   align-self: center;
-}
-
-
-
-
-
-
-
-
-.c-gallery{
- /* margin-left: $size-indent-from-left-border + $size-content-indent-left;
-  margin-right: $size-indent-from-left-border;*/
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  img{
-    height: auto;
-    @media (min-width: $size-tablet) {
-      width: 12rem;
-      margin: 0 0.5rem 0.5rem 0;
-    }
-    @media (max-width: $size-tablet) {
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-  }
 }
 
 

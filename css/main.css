@@ -83,111 +83,6 @@ a:focus {
 .c-warning-info {
   background-color: rgba(226, 179, 1, 0.4); }
 
-/* ----------------- trying to do gallery below -------------------------*/
-.c-lightbox-starter {
-  width: 10rem;
-  cursor: pointer; }
-
-.c-lightbox-wrapper {
-  z-index: 999;
-  background-color: #081e4c;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  display: none; }
-
-/*.c-lightbox-close{
-  color: white;
-  font-weight: bold;
-  font-size: 40px;
-  cursor: pointer;
-  align-self: flex-end;
-  padding: 3rem 4rem;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-.c-lightbox-close:hover{
-  background-color: #e2b301;
-}*/
-.c-lightbox-img-big {
-  width: 50rem;
-  height: 30rem;
-  display: none; }
-
-.c-lightbox-img-big-wrapper {
-  box-sizing: border-box;
-  width: 60rem;
-  height: 30rem;
-  margin: 2rem auto 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; }
-
-.c-lightbox-prev, .c-lightbox-next {
-  color: white;
-  font-weight: bold;
-  font-size: 40px;
-  cursor: pointer;
-  position: relative;
-  height: 100%;
-  display: flex;
-  padding: 0 1.5rem;
-  align-items: center; }
-
-.c-lightbox-prev:hover, .c-lightbox-next:hover {
-  background-color: #e2b301; }
-
-.c-lightbox-images-small-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 50rem;
-  margin: 2rem auto; }
-
-#c-gallery-show {
-  display: none;
-  flex-direction: column;
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0; }
-
-.c-lightbox-img-small {
-  width: 8rem;
-  height: auto;
-  cursor: pointer;
-  margin-bottom: 1rem; }
-
-.c-lightbox-img-small:hover, .c-lightbox-img-small:active, .c-lightbox-img-small:focus {
-  margin-bottom: 2rem; }
-
-.c-lightbox-close {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 30px;
-  cursor: pointer;
-  padding: 2rem 2.5rem;
-  align-self: flex-end;
-  position: fixed;
-  top: 1rem;
-  right: 1rem; }
-
-.c-lightbox-close:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-  color: #000000;
-  border-radius: 50%; }
-
 .c-header_logo {
   height: auto; }
   @media (min-width: 800px) {
@@ -454,6 +349,8 @@ section {
     left: 0;
     width: 100%;
     height: 100%; } }
+.c-video-wrapper .c-video:hover, .c-video-wrapper .c-video:active, .c-video-wrapper .c-video:focus {
+  outline: none; }
 
 @media (min-width: 801px) and (max-width: 1360px) {
   .c-vertical-scroll {
@@ -517,23 +414,6 @@ section {
   height: auto;
   padding: 0 1rem;
   align-self: center; }
-
-.c-gallery {
-  /* margin-left: $size-indent-from-left-border + $size-content-indent-left;
-   margin-right: $size-indent-from-left-border;*/
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-  .c-gallery img {
-    height: auto; }
-    @media (min-width: 800px) {
-      .c-gallery img {
-        width: 12rem;
-        margin: 0 0.5rem 0.5rem 0; } }
-    @media (max-width: 800px) {
-      .c-gallery img {
-        width: 100%;
-        margin-bottom: 1rem; } }
 
 .c-section-brick_info {
   display: flex;
@@ -616,7 +496,75 @@ section {
       margin-left: 6rem;
       margin-bottom: 3rem; } }
 
-/* --- SLIDESHOW --- */
+.c-cards {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: flex-start;
+  width: 51rem;
+  padding: 0 16rem; }
+  @media (min-width: 801px) and (max-width: 1360px) {
+    .c-cards {
+      display: none; } }
+  @media (min-width: 1361px) {
+    .c-cards {
+      display: flex; } }
+  @media (max-width: 800px) {
+    .c-cards {
+      display: none; } }
+
+.c-card {
+  width: 15rem;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  margin: 1rem;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #000000; }
+  .c-card img {
+    width: 100%;
+    object-fit: cover; }
+  .c-card p {
+    padding: 1.5rem;
+    margin: 0; }
+
+.c-card:hover {
+  position: relative;
+  top: -1rem;
+  color: #000000; }
+
+/* for tablet and low */
+.c-bricks-ul {
+  padding: 0;
+  margin: 0; }
+  @media (min-width: 801px) and (max-width: 1360px) {
+    .c-bricks-ul {
+      margin-right: 6rem;
+      margin-left: 6rem; } }
+  @media (min-width: 1361px) {
+    .c-bricks-ul {
+      display: none; } }
+  .c-bricks-ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .c-bricks-ul li a {
+      text-transform: uppercase;
+      display: block;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 14px;
+      padding: 1rem; }
+    .c-bricks-ul li a:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #000000; }
+
+/* SLIDESHOW on mainpage */
 .c-slideshow-container {
   position: relative;
   margin: auto;
@@ -745,74 +693,6 @@ section {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }*/
-.c-cards {
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content: flex-start;
-  width: 51rem;
-  padding: 0 16rem; }
-  @media (min-width: 801px) and (max-width: 1360px) {
-    .c-cards {
-      display: none; } }
-  @media (min-width: 1361px) {
-    .c-cards {
-      display: flex; } }
-  @media (max-width: 800px) {
-    .c-cards {
-      display: none; } }
-
-.c-card {
-  width: 15rem;
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-  margin: 1rem;
-  text-decoration: none;
-  background-color: #ffffff;
-  color: #000000; }
-  .c-card img {
-    width: 100%;
-    object-fit: cover; }
-  .c-card p {
-    padding: 1.5rem;
-    margin: 0; }
-
-.c-card:hover {
-  position: relative;
-  top: -1rem;
-  color: #000000; }
-
-/* for tablet and low */
-.c-bricks-ul {
-  padding: 0;
-  margin: 0; }
-  @media (min-width: 801px) and (max-width: 1360px) {
-    .c-bricks-ul {
-      margin-right: 6rem;
-      margin-left: 6rem; } }
-  @media (min-width: 1361px) {
-    .c-bricks-ul {
-      display: none; } }
-  .c-bricks-ul li {
-    list-style-type: none;
-    padding: 0;
-    margin: 1rem 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-    .c-bricks-ul li a {
-      text-transform: uppercase;
-      display: block;
-      font-weight: bold;
-      letter-spacing: 2px;
-      font-size: 14px;
-      padding: 1rem; }
-    .c-bricks-ul li a:hover {
-      background-color: rgba(0, 0, 0, 0.2);
-      color: #000000; }
-
 /* MINI GALLERY - on top of page with the given brick */
 @media (min-width: 801px) and (max-width: 1360px) {
   .c-mini-gallery {
@@ -872,5 +752,41 @@ section {
     .c-mini-gallery-big-img {
       width: 20rem;
       height: 20rem; } }
+
+/* GALLERY FOR ITEMS FROM TABLE */
+#c-gallery-show {
+  display: none;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.c-lightbox-img-small {
+  width: 8rem;
+  height: auto;
+  cursor: pointer;
+  margin-bottom: 1rem; }
+
+.c-lightbox-img-small:hover, .c-lightbox-img-small:active, .c-lightbox-img-small:focus {
+  margin-bottom: 2rem; }
+
+.c-lightbox-close {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 2rem 2.5rem;
+  align-self: flex-end;
+  position: fixed;
+  top: 1rem;
+  right: 1rem; }
+
+.c-lightbox-close:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #000000;
+  border-radius: 50%; }
 
 /*# sourceMappingURL=main.css.map */
