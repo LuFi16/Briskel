@@ -191,16 +191,26 @@ function miniGallery(imgs) {
 
 /* ----------------- trying to do gallery below -------------------------*/
 
-function showLightbox(){
+/*function showLightbox(){
     document.getElementById("c-lightbox-wrapper").style.display = "block";
 }
 function hideLightbox(){
     document.getElementById("c-lightbox-wrapper").style.display = "none";
+}*/
+function showLightbox(){
+    document.getElementById("c-gallery-show").style.display = "flex";
+}
+function hideLightbox(){
+    document.getElementById("c-gallery-show").style.display = "none";
 }
 
 
-function dalsiSLide(m){
-
+function dalsiSLide(n){
+    if (n < 0){
+        tentoSlide(gSlideIndex -= 1);
+    } else {
+        tentoSlide(gSlideIndex += 1);
+    }
 }
 
 
@@ -246,4 +256,18 @@ function tentoSlide(n){
             document.getElementById("img5").style.display = "block";
            break;
     }
+}
+
+
+
+function cplusSlides(n){
+    if (n < 0){
+        showSlides(gSlideIndex -= 1);
+    } else {
+        showSlides(gSlideIndex += 1);
+    }
+}
+
+function ccurrentSlide(n){
+    showSlides(gSlideIndex = n);
 }

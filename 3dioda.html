@@ -118,8 +118,11 @@
                     <tr>
                         <td>3D tisk</td>
                         <td>
-                            <a href="downloads/boards/007_4x4_3xLed_RGB_singleLed/007_4x4_3xLed_RGB_singleLed_top.png" target="_blank"><img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/007_4x4_3xLed_RGB_singleLed_top.png"
-                                 alt="top" width="64" height="64"></a>
+                            <a href="downloads/boards/007_4x4_3xLed_RGB_singleLed/007_4x4_3xLed_RGB_singleLed_top.png"
+                               target="_blank">
+                                <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/007_4x4_3xLed_RGB_singleLed_top.png"
+                                 alt="top" width="64" height="64" onclick="showLightbox();ccurrentSlide(1)">
+                            </a>
                         </td>
                         <td>Krabička top</td>
                         <td>Tisk bez podpor</td>
@@ -132,8 +135,11 @@
                     <tr>
                         <td>3D tisk</td>
                         <td>
-                            <a href="downloads/common/mechanics/000_4x4_BottomStandard.png" target="_blank"><img src="downloads/common/mechanics/000_4x4_BottomStandard.png"
-                                 alt="bot" width="64" height="64"></a>
+                            <a href="downloads/common/mechanics/000_4x4_BottomStandard.png"
+                               target="_blank">
+                                <img src="downloads/common/mechanics/000_4x4_BottomStandard.png"
+                                 alt="bot" width="64" height="64" onclick="showLightbox();ccurrentSlide(2)">
+                            </a>
                         </td>
                         <td>Krabička spodek</td>
                         <td>Tisk bez podpor</td>
@@ -146,8 +152,11 @@
                     <tr>
                         <td>3D tisk</td>
                         <td>
-                            <a href="downloads/common/mechanics/000_pcb_distance_washer.png" target="_blank"><img src="downloads/common/mechanics/000_pcb_distance_washer.png"
-                                 alt="washer" width="64" height="64"></a>
+                            <a href="downloads/common/mechanics/000_pcb_distance_washer.png"
+                               target="_blank">
+                                <img src="downloads/common/mechanics/000_pcb_distance_washer.png"
+                                 alt="washer" width="64" height="64" onclick="showLightbox();ccurrentSlide(3)">
+                            </a>
                         </td>
                         <td>Podpora pod PCB</td>
                         <td>Tisk bez podpor</td>
@@ -160,8 +169,11 @@
                     <tr>
                         <td>Elektronika</td>
                         <td>
-                            <a href="downloads/boards/007_4x4_3xLed_RGB_singleLed/007_4x4_3xLed_RGB_singleLed_pcb.jpg" target="_blank"><img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/007_4x4_3xLed_RGB_singleLed_pcb.jpg"
-                                 alt="pcb" width="64" height="64"></a>
+                            <a href="downloads/boards/007_4x4_3xLed_RGB_singleLed/007_4x4_3xLed_RGB_singleLed_pcb.jpg"
+                               target="_blank">
+                                <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/007_4x4_3xLed_RGB_singleLed_pcb.jpg"
+                                 alt="pcb" width="64" height="64" onclick="showLightbox();ccurrentSlide(4)">
+                            </a>
                         </td>
                         <td>Osazený plošný spoj s konektory, naprogramovaný</td>
                         <td></td>
@@ -171,8 +183,11 @@
                     <tr>
                         <td>Spojovací materiál</td>
                         <td>
-                            <a href="downloads/common/mechanics/screw_B2.5X16.jpg" target="_blank"><img src="downloads/common/mechanics/screw_B2.5X16.jpg"
-                                 alt="screw" width="64" height="64"></a>
+                            <a href="downloads/common/mechanics/screw_B2.5X16.jpg"
+                               target="_blank">
+                                <img src="downloads/common/mechanics/screw_B2.5X16.jpg"
+                                 alt="screw" width="64" height="64" onclick="showLightbox();ccurrentSlide(5)">
+                            </a>
                         </td>
                         <td>Šroub do plastu B2.5X16</td>
                         <td></td>
@@ -183,12 +198,64 @@
 
                 </table>
             </div>
-            
-            
         </div>
-
-
     </section>
+
+    <!-- gallery shows when img is clicked -->
+    <div id="c-gallery-show">
+
+        <span class="c-lightbox-close" id="c-lightbox-close" onclick="hideLightbox()">&times;</span>
+
+        <div class="c-slideshow-container c-slideshow-container-fullscreen">
+
+            <div class="c-slide c-slide-fade">
+                <div class="c-slide-number">1 / 5</div>
+                <img src="img/carousel1.JPG" alt="img" class="c-slide-img">
+                <div class="c-slide-text">Elektronická stavebnice pro děti</div>
+            </div>
+
+            <div class="c-slide c-slide-fade">
+                <div class="c-slide-number">2 / 5</div>
+                <img src="img/carousel2.JPG" alt="img" class="c-slide-img">
+                <div class="c-slide-text">Kompatibilní s Lego Duplo</div>
+            </div>
+
+            <div class="c-slide c-slide-fade">
+                <div class="c-slide-number">3 / 5</div>
+                <img src="img/carousel3.JPG" alt="img" class="c-slide-img">
+                <div class="c-slide-text">Pobyhlivé modely</div>
+            </div>
+
+            <div class="c-slide c-slide-fade">
+                <div class="c-slide-number">4 / 5</div>
+                <img src="img/carousel1.JPG" alt="img" class="c-slide-img">
+                <div class="c-slide-text">Něco dalšího</div>
+            </div>
+
+            <div class="c-slide c-slide-fade">
+                <div class="c-slide-number">5 / 5</div>
+                <img src="img/carousel2.JPG" alt="img" class="c-slide-img">
+                <div class="c-slide-text">Opět něco jiného</div>
+            </div>
+
+            <a class="c-slide-prev" onclick="cplusSlides(-1)">&#10094;</a>
+            <a class="c-slide-next" onclick="cplusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div class="c-slideshow-dots">
+            <!--<span class="c-slideshow-dot" onclick="currentSlide(1)"></span>
+            <span class="c-slideshow-dot" onclick="currentSlide(2)"></span>
+            <span class="c-slideshow-dot" onclick="currentSlide(3)"></span>-->
+
+
+            <img src="img/carousel1.JPG" class="c-lightbox-img-small" onclick="ccurrentSlide(1)">
+            <img src="img/carousel2.JPG" class="c-lightbox-img-small" onclick="ccurrentSlide(2)">
+            <img src="img/carousel3.JPG" class="c-lightbox-img-small" onclick="ccurrentSlide(3)">
+            <img src="img/carousel1.JPG" class="c-lightbox-img-small" onclick="ccurrentSlide(4)">
+            <img src="img/carousel2.JPG" class="c-lightbox-img-small" onclick="ccurrentSlide(5)">
+        </div>
+    </div>
 
    <section class="c-page_electronics">
 
@@ -205,6 +272,7 @@
         </div>
         
     </section>
+
 
 
 </main>

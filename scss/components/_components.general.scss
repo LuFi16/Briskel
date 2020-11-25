@@ -164,7 +164,7 @@ a:focus{              //after click
   display: none;
 }
 
-.c-lightbox-close{
+/*.c-lightbox-close{
   color: white;
   font-weight: bold;
   font-size: 40px;
@@ -177,7 +177,7 @@ a:focus{              //after click
 }
 .c-lightbox-close:hover{
   background-color: #e2b301;
-}
+}*/
 
 .c-lightbox-img-big{
   width: 50rem;
@@ -226,18 +226,52 @@ a:focus{              //after click
   //background-color: #30a12f;
 }
 
+
+
+
+
+
+
+#c-gallery-show{
+  display: none;
+  //display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .c-slideshow-container .c-slide{
+
+  }
+}
+
 .c-lightbox-img-small{
   width: 8rem;
   height: auto;
+  cursor: pointer;
+  margin-bottom: 1rem;
 }
-.c-lightbox-img-small:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.c-lightbox-img-small:hover, .c-lightbox-img-small:active, .c-lightbox-img-small:focus{
+  //box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  margin-bottom: 2rem;
 }
-
-
-
-
-
-
-
+.c-lightbox-close{
+  color: $color-biggest-img-close;;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 2rem 2.5rem;
+  align-self: flex-end;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+.c-lightbox-close:hover{
+  background-color: $color-biggest-img-close-hover-bcg;
+  color: $color-biggest-img-close-hover;
+  border-radius: 50%;
+}
 
