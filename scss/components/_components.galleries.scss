@@ -96,6 +96,11 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  img{
+    width: 8rem;
+    height: 7rem;
+    object-fit: cover;
+  }
 }
 
 .c-slideshow-dot {

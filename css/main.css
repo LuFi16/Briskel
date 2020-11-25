@@ -651,6 +651,10 @@ section {
       display: flex;
       flex-direction: row;
       justify-content: space-between; } }
+  .c-slideshow-dots img {
+    width: 8rem;
+    height: 7rem;
+    object-fit: cover; }
 
 .c-slideshow-dot {
   cursor: pointer;
