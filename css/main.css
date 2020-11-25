@@ -526,8 +526,9 @@ section {
   background-color: #ffffff;
   color: #000000; }
   .c-card img {
-    width: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    width: 15rem;
+    height: 12rem; }
   .c-card p {
     padding: 1.5rem;
     margin: 0; }
