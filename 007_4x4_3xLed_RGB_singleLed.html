@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briskel Bricks - tříbarevná dioda</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/08ab134375.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <!--only for desktop and up-->
+    <div class="c-menu-desktop c-menu">
+        <a href="index.html"><img src="img/Briskel-logo.svg" alt="Briskel logo" title="Briskel Bricks" class="c-header_logo"></a>
+        <nav class="c-menu-desktop-nav">
+            <ul>
+                <li><a href="index.html">Domů</a><span class="c-menu_line"></span></li>
+                <li><a href="bricks.html">Bricks</a><span class="c-menu_line"></span></li>
+                <li><a href="how_it_works.html">Princip</a><span class="c-menu_line"></span></li>
+                <li><a href="kontakt.html">Kontakt</a><span class="c-menu_line"></span></li>
+            </ul>
+            <div class="c-menu_flag" onclick="NeniKDispoziciJazyk()"><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img"></a></div>
+        </nav>
+    </div>
+
+    <!--only for tablet and low-->
+    <div class="c-menu-mobile c-menu">
+        <div class="c-menu-hamburger">
+            <a href="index.html"><img src="img/Briskel-logo.svg" alt="Briskel logo" title="Briskel Bricks" class="c-header_logo"></a>
+            <a class="c-menu-hamburger-icon" onclick="HamburgerMenu()"><i class="fa fa-bars"></i></a>
+        </div>
+
+        <nav id="c-mobile-nav">
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="bricks.html">Bricks</a></li>
+                <li><a href="how_it_works.html">Princip</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="#" onclick="NeniKDispoziciJazyk()"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img">English</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<main id="c-page">
+
+    <noscript class="c-warning" id="c-warning">Prosím, povolte si javascript v prohlížeči. Některé funkce Vám jinak mohou být skryty.</noscript>
+    <p class="c-warning-info" id="c-warning-info">Vítejte na našich stránkách! Berte prosím na vědomí, že stránky jsou právě ve vývoji a mohou obsahovat chyby.</p>
+
+    <h1 class="c-page-first-heading">Tříbarevná dioda</h1>
+
+    <section class="c-section-brick_info">
+        <div class="c-brick_info-brick_box">
+
+            <!--<img src="img/bricks/dioda_tribarevna.jpg" alt="tříbarevná dioda" class="c-brick_box-img">-->
+            <div class="c-mini-gallery">
+                <img class="c-mini-gallery-big-img" id="mini-gallery-big-img" src="downloads/boards/007_4x4_3xLed_RGB_singleLed/img1.jpg" alt="img">
+
+                <div class="c-mini-gallery-small-imgs">
+                    <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/img1.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/img2.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/img3.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/demo1.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/demo2.jpg" alt="img" onclick="miniGallery(this);">
+                </div>
+            </div>
+
+            <div>
+                <p>Modul obsahuje tříbarevnou diodu, ovládanou třemi vstupními signály:</p>
+                <ul>
+                    <li>1 - zelená</li>
+                    <li>2 - modrá</li>
+                    <li>3 - červená</li>
+                </ul>
+                <p>Vstupní hodnota ovlivňuje intenzitu jednotlivé LED. Pokud je hodnota negativní, příslušná dioda bliká.</p>
+
+            </div>
+        </div>
+
+        <!--<img src="img/video.jpg" alt="video" class="c-video">-->
+        <div class="c-video-wrapper">
+            <video controls="controls" src="https://www.briskel.com/videos/rgb_dioda_720p.mp4" class="c-video">
+                Your browser does not support the HTML5 Video element.
+            </video>
+        </div>
+    </section>
+
+
+
+    <section class="c-section_manual">
+
+        <div class="c-section-heading" onclick="ShowHideMan()">
+            <h2>Návod k výrobě</h2>
+            <span id="c-man-open"><i class="fas fa-caret-up"></i></span>
+            <span id="c-man-close"><i class="fas fa-caret-down"></i></span>
+        </div>
+
+
+        <div id="c-manual">
+            
+            <div class="c-video-wrapper">
+                <video controls="controls" src="https://www.briskel.com/videos/rgb_dioda_montaz_480p.mp4" class="c-video">
+                    Your browser does not support the HTML5 Video element.
+                </video>
+            </div>
+            
+            <h3>Seznam součástek potřebných k vyrobení:</h3>
+
+            <div class="c-vertical-scroll">
+                <table class="c-table">
+                    <thead>
+                    <tr>
+                        <th>Kategorie</th>
+                        <th></th>
+                        <th>Popis</th>
+                        <th>Poznámka</th>
+                        <th>Počet</th>
+                        <th>Název</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>3D tisk</td>
+                        <td>
+                            <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/openscad_top.png"
+                             alt="top" width="64" height="64" onclick="showLightbox();ccurrentSlide(1)">
+                        </td>
+                        <td>Krabička top</td>
+                        <td>Tisk bez podpor</td>
+                        <td>1</td>
+                        <td>
+                            <a href="downloads/boards/007_4x4_3xLed_RGB_singleLed/007_4x4_3xLed_RGB_singleLed_top.stl">
+                                007_4x4_3xLed_RGB_singleLed_top.stl</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3D tisk</td>
+                        <td>
+                            <img src="downloads/common/mechanics/000_4x4_BottomStandard.png"
+                             alt="bot" width="64" height="64" onclick="showLightbox();ccurrentSlide(2)">
+                        </td>
+                        <td>Krabička spodek</td>
+                        <td>Tisk bez podpor</td>
+                        <td>1</td>
+                        <td>
+                            <a href="downloads/common/mechanics/000_4x4_BottomStandard.stl">
+                                000_4x4_BottomStandard.stl</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3D tisk</td>
+                        <td>
+                            <img src="downloads/common/mechanics/000_pcb_distance_washer.png"
+                             alt="washer" width="64" height="64" onclick="showLightbox();ccurrentSlide(3)">
+                        </td>
+                        <td>Podpora pod PCB</td>
+                        <td>Tisk bez podpor</td>
+                        <td>4</td>
+                        <td>
+                            <a href="downloads/common/mechanics/000_pcb_distance_washer.stl">
+                                000_pcb_distance_washer.stl</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Elektronika</td>
+                        <td>
+                            <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/pcb.jpg"
+                             alt="pcb" width="64" height="64" onclick="showLightbox();ccurrentSlide(4)">
+                        </td>
+                        <td>Osazený plošný spoj s konektory, naprogramovaný</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>019_RGB_LED_PCB</td>
+                    </tr>
+                    <tr>
+                        <td>Spojovací materiál</td>
+                        <td>
+                            <img src="downloads/common/mechanics/screw_B2.5X16.jpg"
+                             alt="screw" width="64" height="64" onclick="showLightbox();ccurrentSlide(5)">
+                        </td>
+                        <td>Šroub do plastu B2.5X16</td>
+                        <td></td>
+                        <td>4</td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery shows when img in table is clicked -->
+    <div id="c-gallery-show">
+
+        <span class="c-lightbox-close" id="c-lightbox-close" onclick="hideLightbox()">&times;</span>
+
+        <div class="c-slideshow-container c-slideshow-container-fullscreen">
+
+            <div class="c-slide c-slide-fade">
+                <div class="c-slide-number">1 / 5</div>
+                <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/openscad_top.png" alt="img" class="c-slide-img">
+                <div class="c-slide-text">Krabička top</div>
+            </div>
+
+            <div class="c-slide c-slide-fade">
+                <div class="c-slide-number">2 / 5</div>
+                <img src="downloads/common/mechanics/000_4x4_BottomStandard.png" alt="img" class="c-slide-img">
+                <div class="c-slide-text">Krabička spodek</div>
+            </div>
+
+            <div class="c-slide c-slide-fade">
+                <div class="c-slide-number">3 / 5</div>
+                <img src="downloads/common/mechanics/000_pcb_distance_washer.png" alt="img" class="c-slide-img">
+                <div class="c-slide-text">Podpora pod PCB</div>
+            </div>
+
+            <div class="c-slide c-slide-fade">
+                <div class="c-slide-number">4 / 5</div>
+                <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/pcb.jpg" alt="img" class="c-slide-img">
+                <div class="c-slide-text">Osazený plošný spoj s konektory, naprogramovaný</div>
+            </div>
+
+            <div class="c-slide c-slide-fade">
+                <div class="c-slide-number">5 / 5</div>
+                <img src="downloads/common/mechanics/screw_B2.5X16.jpg" alt="img" class="c-slide-img">
+                <div class="c-slide-text">Šroub do plastu B2.5X16</div>
+            </div>
+
+            <a class="c-slide-prev" onclick="cplusSlides(-1)">&#10094;</a>
+            <a class="c-slide-next" onclick="cplusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div class="c-slideshow-dots">
+            <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/openscad_top.png" class="c-lightbox-img-small" onclick="ccurrentSlide(1)">
+            <img src="downloads/common/mechanics/000_4x4_BottomStandard.png" class="c-lightbox-img-small" onclick="ccurrentSlide(2)">
+            <img src="downloads/common/mechanics/000_pcb_distance_washer.png" class="c-lightbox-img-small" onclick="ccurrentSlide(3)">
+            <img src="downloads/boards/007_4x4_3xLed_RGB_singleLed/pcb.jpg" class="c-lightbox-img-small" onclick="ccurrentSlide(4)">
+            <img src="downloads/common/mechanics/screw_B2.5X16.jpg" class="c-lightbox-img-small" onclick="ccurrentSlide(5)">
+        </div>
+    </div>
+
+   <section class="c-page_electronics">
+
+        <div class="c-section-heading" onclick="ShowHideEle()">
+            <h2>Elektronika</h2>
+            <span id="c-ele-open"><i class="fas fa-caret-up"></i></span>
+            <span id="c-ele-close"><i class="fas fa-caret-down"></i></span>
+        </div>
+
+        <div id="c-electronics">
+            <p>
+                Plošný spoj - <a href="downloads/boards/007_4x4_3xLed_RGB_singleLed/schematics.pdf" target="_blank">schema</a>
+            <p>
+        </div>
+        
+    </section>
+
+
+
+</main>
+
+<footer>
+    <p>
+        &copy; 2020 Martin Paták a Lucie Fiedlerová<br>
+        Background image by <a href="https://pixabay.com/users/semevent-4278751/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2458575">Semevent</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2458575">Pixabay</a>
+    </p>
+</footer>
+
+<script src="javascript/main.js"></script>
+
+</body>
+</html>
