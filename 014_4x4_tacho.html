@@ -10,38 +10,7 @@
 </head>
 <body>
 <header>
-    <!--only for desktop and up-->
-    <div class="c-menu-desktop c-menu">
-        <a href="index.html"><img src="img/Briskel-logo.svg" alt="Briskel logo" title="Briskel Bricks" class="c-header_logo"></a>
-        <nav class="c-menu-desktop-nav">
-            <ul>
-                <li><a href="index.html">Domů</a><span class="c-menu_line"></span></li>
-                <li><a href="bricks.html">Bricks</a><span class="c-menu_line"></span></li>
-                <li><a href="how_it_works.html">Princip</a><span class="c-menu_line"></span></li>
-                <li><a href="kontakt.html">Kontakt</a><span class="c-menu_line"></span></li>
-            </ul>
-            <div class="c-menu_flag" onclick="NeniKDispoziciJazyk()"><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img"></a></div>
-        </nav> 
-    </div>
-
-    <!--only for tablet and low-->
-    <div class="c-menu-mobile c-menu">
-        <div class="c-menu-hamburger">
-            <a href="index.html"><img src="img/Briskel-logo.svg" alt="Briskel logo" title="Briskel Bricks" class="c-header_logo"></a>
-            <a class="c-menu-hamburger-icon" onclick="HamburgerMenu()"><i class="fa fa-bars"></i></a>
-        </div>
-
-        <nav id="c-mobile-nav">
-            <ul>
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="bricks.html">Bricks</a></li>
-                <li><a href="how_it_works.html">Princip</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img">English</a></li>
-            </ul>
-        </nav>
-    </div>
-
+    <script src="javascript/header.js"></script>
 </header>
 
 <main id="c-page">
@@ -81,7 +50,7 @@
 
         <!--<img src="img/video.jpg" alt="video" class="c-video">-->
         <div class="c-video-wrapper">
-            <video controls="controls" src="https://www.briskel.com/videos/.mp4" class="c-video">
+            <video controls="controls" src="https://www.briskel.com/videos/014_4x4_tacho_tutorial.mp4" class="c-video">
                 Your browser does not support the HTML5 Video element.
             </video>
         </div>
@@ -98,7 +67,7 @@
         </div>
 
          <div class="c-video-wrapper">
-            <video controls="controls" src="https://www.briskel.com/videos/.mp4" class="c-video">
+            <video controls="controls" src="https://www.briskel.com/videos/014_4x4_tacho_assembly.mp4" class="c-video">
                 Your browser does not support the HTML5 Video element.
             </video>
         </div>
@@ -287,10 +256,7 @@
 </main>
 
 <footer>
-    <p>
-        &copy; 2020 Martin Paták a Lucie Fiedlerová<br>
-        Background image by <a href="https://pixabay.com/users/semevent-4278751/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2458575">Semevent</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2458575">Pixabay</a>
-    </p>
+    <script src="javascript/footer.js"></script>
 </footer>
 
 <script src="javascript/main.js"></script>
