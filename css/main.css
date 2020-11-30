@@ -342,7 +342,7 @@ section {
     @media (min-width: 800px) {
       .c-video-wrapper .c-video {
         width: 40rem;
-        height: 23rem; } }
+        height: auto; } }
     @media (max-width: 800px) {
       .c-video-wrapper .c-video {
         position: absolute;

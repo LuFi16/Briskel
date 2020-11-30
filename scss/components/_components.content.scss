@@ -140,7 +140,8 @@ section{
     cursor: pointer;
     @media (min-width: $size-tablet) {
       width: $size-video-width;
-      height: $size-video-height;
+      //height: $size-video-height;
+      height: auto;
     }
     @media (max-width: $size-tablet) {
       position: absolute;
