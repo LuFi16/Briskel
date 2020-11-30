@@ -307,7 +307,7 @@ section {
 
 #c-parameters, #c-manual, #c-electronics {
   text-align: center; }
-  @media (min-width: 801px) and (max-width: 1360px) {
+  @media (min-width: 901px) and (max-width: 1360px) {
     #c-parameters, #c-manual, #c-electronics {
       margin-left: 6rem;
       margin-right: 6rem; } }
@@ -315,12 +315,18 @@ section {
     #c-parameters, #c-manual, #c-electronics {
       margin-left: 14rem;
       margin-right: 14rem;
-      padding-left: 2rem; } }
+      padding-left: 2rem; }
+      #c-parameters .c-video, #c-manual .c-video, #c-electronics .c-video {
+        margin-left: -2rem; } }
   #c-parameters h2, #c-parameters h3, #c-parameters h4, #c-parameters h5, #c-parameters p, #c-parameters ul, #c-parameters ol, #c-manual h2, #c-manual h3, #c-manual h4, #c-manual h5, #c-manual p, #c-manual ul, #c-manual ol, #c-electronics h2, #c-electronics h3, #c-electronics h4, #c-electronics h5, #c-electronics p, #c-electronics ul, #c-electronics ol {
     text-align: left; }
-  @media (min-width: 800px) {
+  @media (min-width: 901px) {
     #c-parameters h2, #c-parameters h3, #c-parameters h4, #c-parameters h5, #c-manual h2, #c-manual h3, #c-manual h4, #c-manual h5, #c-electronics h2, #c-electronics h3, #c-electronics h4, #c-electronics h5 {
       margin-left: -2rem; } }
+  @media (min-width: 801px) and (max-width: 900px) {
+    #c-parameters, #c-manual, #c-electronics {
+      margin-left: 2rem;
+      margin-right: 2rem; } }
 
 #c-par-open, #c-man-open, #c-ele-open {
   display: block; }

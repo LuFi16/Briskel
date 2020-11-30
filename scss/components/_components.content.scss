@@ -103,7 +103,7 @@ section{
 
 #c-parameters, #c-manual, #c-electronics{
   text-align: center;
-  @media (min-width: 801px) and (max-width: 1360px) {
+  @media (min-width: 901px) and (max-width: 1360px) {
     margin-left: 6rem;
     margin-right: 6rem;
   }
@@ -111,20 +111,22 @@ section{
     margin-left: $size-indent-from-left-border;
     margin-right: $size-indent-from-left-border;
     padding-left: 2rem;
-  }
-  @media (min-width: $size-tablet) {
-  }
-  @media (max-width: $size-tablet) {
+    .c-video{
+      margin-left: -2rem;
+    }
   }
   h2, h3, h4, h5, p, ul, ol{
     text-align: left;
   }
   h2, h3, h4, h5{
-    @media (min-width: $size-tablet) {
+    @media (min-width: 901px) {
       margin-left: -2rem;
     }
-    @media (max-width: $size-tablet) {
-    }
+  }
+
+  @media (min-width: 801px) and (max-width: 900px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 
