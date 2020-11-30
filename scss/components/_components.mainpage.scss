@@ -1,32 +1,19 @@
 
 .c-intro-heading{
   text-align: center;
-  @media (min-width: 801px) and (max-width: 1360px) {
-  }
   @media (min-width: 1361px){
     margin-top: 3rem;
     margin-right: 6rem;
     margin-left: 6rem;
   }
-  @media (min-width: $size-tablet) {
-}
-  @media (max-width: $size-tablet) {
-  }
 }
 
 .c-intro{
   text-align: center;
-
-  @media (min-width: 801px) and (max-width: 1360px) {
-  }
   @media (min-width: 1361px){
     margin-right: 6rem;
     margin-left: 6rem;
     margin-bottom: 3rem;
-  }
-  @media (min-width: $size-tablet) {
-  }
-  @media (max-width: $size-tablet) {
   }
 }
 

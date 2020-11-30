@@ -36,23 +36,7 @@ function HamburgerMenu(){
 
 
 
-/* functions for opening and close sections on page (Parameters, Manual, Electronics) */
-
-function ShowHidePar(){
-    let content = document.getElementById("c-parameters")
-    let arrowUp = document.getElementById("c-par-open")
-    let arrowDown = document.getElementById("c-par-close")
-
-    if (content.style.display === "none") {
-        content.style.display = "block";
-        arrowUp.style.display = "block";
-        arrowDown.style.display = "none";
-    } else {
-        content.style.display = "none";
-        arrowUp.style.display = "none";
-        arrowDown.style.display = "block";
-    }
-}
+/* functions for opening and close sections on page (Manual, Electronics) */
 
 function ShowHideMan(){
     let content = document.getElementById("c-manual")
@@ -187,77 +171,12 @@ function miniGallery(imgs) {
 
 
 
-
-
-/* ----------------- trying to do gallery below -------------------------*/
-
-/*function showLightbox(){
-    document.getElementById("c-lightbox-wrapper").style.display = "block";
-}
-function hideLightbox(){
-    document.getElementById("c-lightbox-wrapper").style.display = "none";
-}*/
 function showLightbox(){
     document.getElementById("c-gallery-show").style.display = "flex";
 }
 function hideLightbox(){
     document.getElementById("c-gallery-show").style.display = "none";
 }
-
-
-function dalsiSLide(n){
-    if (n < 0){
-        tentoSlide(gSlideIndex -= 1);
-    } else {
-        tentoSlide(gSlideIndex += 1);
-    }
-}
-
-
-function tentoSlide(n){
-    switch(n){
-        case 1:
-            document.getElementById("img1").style.display = "block";
-            document.getElementById("img2").style.display = "none";
-            document.getElementById("img3").style.display = "none";
-            document.getElementById("img4").style.display = "none";
-            document.getElementById("img5").style.display = "none";
-           break;
-
-        case 2:
-            document.getElementById("img1").style.display = "none";
-            document.getElementById("img2").style.display = "block";
-            document.getElementById("img3").style.display = "none";
-            document.getElementById("img4").style.display = "none";
-            document.getElementById("img5").style.display = "none";
-           break;
-
-        case 3:
-            document.getElementById("img1").style.display = "none";
-            document.getElementById("img2").style.display = "none";
-            document.getElementById("img3").style.display = "block";
-            document.getElementById("img4").style.display = "none";
-            document.getElementById("img5").style.display = "none";
-           break;
-
-        case 4:
-            document.getElementById("img1").style.display = "none";
-            document.getElementById("img2").style.display = "none";
-            document.getElementById("img3").style.display = "none";
-            document.getElementById("img4").style.display = "block";
-            document.getElementById("img5").style.display = "none";
-           break;
-
-        case 5:
-            document.getElementById("img1").style.display = "none";
-            document.getElementById("img2").style.display = "none";
-            document.getElementById("img3").style.display = "none";
-            document.getElementById("img4").style.display = "none";
-            document.getElementById("img5").style.display = "block";
-           break;
-    }
-}
-
 
 
 function cplusSlides(n){

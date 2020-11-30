@@ -24,11 +24,7 @@ $size-indent-section-heading: calc(14rem - 1rem);
 
 $size-video-width: 40rem;
 $size-video-height: 23rem;
-$size-mobile-video-width: 100%;
-$size-mobile-video-height: 23rem;
 
-$size-img-width: 20rem;
-$size-mobile-img-width: 100%;
 $size-mini-gallery-width: 20rem;
 $size-mini-gallery-width-mobile: 100%;
 
@@ -41,27 +37,12 @@ $size-mobile-slideshow-width: 100%;
 $size-mobile-slideshow-height: 20rem;
 
 
-/* delete this > */
-@media (min-width: $size-tablet) {
-}
-@media (max-width: $size-tablet) {
-}
-
-@media (min-width: 801px) and (max-width: 1360px) {
-}
-@media (min-width: 1361px){
-}
-/* < delete this */
 
 body{
   margin: 0;
   font-family: Open-Sans-Regular;
   background: $color-background url("../img/lego-blocks.jpg") no-repeat center;
   background-size: cover;
-  @media (min-width: $size-tablet) {
-  }
-  @media (max-width: $size-tablet) {
-  }
 }
 
 .c-btn{            //button
@@ -91,7 +72,7 @@ body{
   color: $color-text-classic;
 }
 
-a{                //link
+a{                    //link
   text-decoration: none;
   color: $color-primary-green;
 }
@@ -125,8 +106,6 @@ a:focus{              //after click
 
 .c-warning{
   background-color: $color-warning-bcg;
-  @media (min-width: $size-tablet) {
-  }
   @media (max-width: $size-tablet) {
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;

@@ -11,8 +11,6 @@ footer{
   p{
     margin: 1rem;
   }
-  @media (min-width: $size-tablet) {
-  }
   @media (max-width: $size-tablet) {
     font-size: 12px;
   }

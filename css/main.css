@@ -10,8 +10,6 @@
   font-family: Open-Sans-Italic;
   src: url("../fonts/OpenSans-Italic.ttf") format("truetype"); }
 /* SIZES */
-/* delete this > */
-/* < delete this */
 body {
   margin: 0;
   font-family: Open-Sans-Regular;
@@ -266,14 +264,7 @@ main {
 section {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
-  /*>p, >h2, >h3, >h4, >h5, >table, >ul, >ol{
-   margin-left: $size-indent-from-left-border;
-   margin-right: $size-indent-from-left-border;
-  }
-  > img{
-    margin: auto;
-  }*/ }
+  margin-bottom: 2rem; }
 
 .c-section-heading {
   display: flex;
@@ -440,16 +431,6 @@ section {
     .c-brick_info-brick_box {
       flex-direction: column; } }
 
-/*.c-brick_box-img{
-  height: auto;
-  @media (min-width: $size-tablet) {
-    width: $size-img-width;
-    margin-right: 3rem;
-  }
-  @media (max-width: $size-tablet) {
-    width: $size-mobile-img-width;
-  }
-}*/
 @media (min-width: 800px) {
   .c-section_parameters .c-table {
     width: 20rem; } }
@@ -683,27 +664,6 @@ section {
 .dot-active, .c-slideshow-dot:hover {
   background-color: #717171; }
 
-/*!* Fading animation *!
-.c-slide-fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes c-slide-fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes c-slide-fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}*/
-/*!* On smaller screens, decrease text size *!
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}*/
 /* MINI GALLERY - on top of page with the given brick */
 @media (min-width: 801px) and (max-width: 1360px) {
   .c-mini-gallery {

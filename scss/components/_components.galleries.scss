@@ -70,7 +70,6 @@
   font-size: 26px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  //text-shadow: 0 0 0 #000000;
   @media (min-width: $size-tablet) {
     padding: 1.5rem 1.5rem;
   }
@@ -126,33 +125,6 @@
   background-color: $color-slideshow-dot-active;
 }
 
-/*!* Fading animation *!
-.c-slide-fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes c-slide-fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes c-slide-fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}*/
-
-/*!* On smaller screens, decrease text size *!
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}*/
-
-
-
-
-
 
 /* MINI GALLERY - on top of page with the given brick */
 
@@ -166,8 +138,6 @@
   }
   @media (min-width: 1361px){
     margin-right: 3rem;
-  }
-  @media (min-width: $size-tablet) {
   }
   @media (max-width: $size-tablet) {
     width: $size-mini-gallery-width-mobile;

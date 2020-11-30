@@ -45,21 +45,12 @@ main{
   @media (min-width: $size-tablet) {
     margin-bottom: 3rem;
   }
-  @media (max-width: $size-tablet) {
-  }
 }
 
 section{
   display: flex;
   flex-direction: column;
   margin-bottom: $size-bottom-indent;
-  /*>p, >h2, >h3, >h4, >h5, >table, >ul, >ol{
-   margin-left: $size-indent-from-left-border;
-   margin-right: $size-indent-from-left-border;
-  }
-  > img{
-    margin: auto;
-  }*/
 }
 
 .c-section-heading{
@@ -73,8 +64,6 @@ section{
   @media (min-width: 1361px){
     margin: 1rem $size-indent-section-heading 1rem $size-indent-section-heading;
   }
-  @media (min-width: $size-tablet) {
-  }
   @media (max-width: $size-tablet) {
     justify-content: space-between;
     margin: 0 -1rem 1rem -1rem;
@@ -87,8 +76,6 @@ section{
     font-size: 28px;
     @media (min-width: $size-tablet) {
       margin-left: 4rem;
-    }
-    @media (max-width: $size-tablet) {
     }
   }
 }
@@ -169,11 +156,7 @@ section{
 @media (min-width: 801px) and (max-width: 1360px) {
   .c-vertical-scroll{
   overflow-x: auto;
-}
-}
-@media (min-width: 1361px){
-}
-@media (min-width: $size-tablet) {
+  }
 }
 @media (max-width: $size-tablet) {
   .c-vertical-scroll{
@@ -184,9 +167,6 @@ section{
 .c-table{
   box-sizing: border-box;
   border-collapse: collapse;
-  //margin-left: $size-indent-from-left-border + $size-content-indent-left;
-  //margin-left: 2rem;
-
   tr{
     border-top: 1px solid $color-line;
     border-bottom: 1px solid $color-line;
@@ -266,22 +246,10 @@ section{
     margin: 0 $size-indent-from-left-border 2rem $size-indent-from-left-border + $size-content-indent-left;
     flex-direction: row;
   }
-  @media (min-width: $size-tablet) {
-  }
   @media (max-width: $size-tablet) {
     flex-direction: column;
   }
 }
-/*.c-brick_box-img{
-  height: auto;
-  @media (min-width: $size-tablet) {
-    width: $size-img-width;
-    margin-right: 3rem;
-  }
-  @media (max-width: $size-tablet) {
-    width: $size-mobile-img-width;
-  }
-}*/
 
                          //section "Parametry"
 .c-section_parameters{
@@ -307,8 +275,6 @@ section{
   .c-table{
     box-sizing: border-box;
     margin-bottom: $size-bottom-indent;
-    @media (min-width: $size-tablet) {
-    }
     @media (max-width: $size-tablet) {
       width: 100%;
       overflow: hidden;
@@ -342,9 +308,5 @@ section{
   @media (min-width: 1361px){
     margin-left: $size-indent-from-left-border + $size-content-indent-left;
     margin-right: $size-indent-from-left-border;
-  }
-  @media (min-width: $size-tablet) {
-  }
-  @media (max-width: $size-tablet) {
   }
 }
