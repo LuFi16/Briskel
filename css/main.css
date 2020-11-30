@@ -325,29 +325,33 @@ section {
 #c-par-close, #c-man-close, #c-ele-close {
   display: none; }
 
-@media (min-width: 800px) {
-  .c-video-wrapper {
-    margin-left: auto;
-    margin-right: auto; } }
-@media (max-width: 800px) {
-  .c-video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    height: 0; } }
-@media (min-width: 800px) {
+.c-video-wrapper {
+  cursor: pointer; }
+  @media (min-width: 800px) {
+    .c-video-wrapper {
+      margin-left: auto;
+      margin-right: auto; } }
+  @media (max-width: 800px) {
+    .c-video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      /* 16:9 */
+      height: 0; } }
   .c-video-wrapper .c-video {
-    width: 40rem;
-    height: 23rem; } }
-@media (max-width: 800px) {
-  .c-video-wrapper .c-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; } }
-.c-video-wrapper .c-video:hover, .c-video-wrapper .c-video:active, .c-video-wrapper .c-video:focus {
-  outline: none; }
+    cursor: pointer; }
+    @media (min-width: 800px) {
+      .c-video-wrapper .c-video {
+        width: 40rem;
+        height: 23rem; } }
+    @media (max-width: 800px) {
+      .c-video-wrapper .c-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; } }
+  .c-video-wrapper .c-video:hover, .c-video-wrapper .c-video:active, .c-video-wrapper .c-video:focus {
+    outline: none; }
 
 @media (min-width: 801px) and (max-width: 1360px) {
   .c-vertical-scroll {
@@ -365,6 +369,8 @@ section {
       text-align: left;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem; }
+  .c-table img {
+    cursor: pointer; }
 
 .c-wide_img {
   box-sizing: border-box;

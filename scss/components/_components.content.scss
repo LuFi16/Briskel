@@ -126,6 +126,7 @@ section{
 }
 
 .c-video-wrapper{
+  cursor: pointer;
   @media (min-width: $size-tablet) {
     margin-left: auto;
     margin-right: auto;
@@ -136,6 +137,7 @@ section{
     height: 0;
   }
   .c-video {
+    cursor: pointer;
     @media (min-width: $size-tablet) {
       width: $size-video-width;
       height: $size-video-height;
@@ -175,6 +177,9 @@ section{
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
     }
+  }
+  img{
+    cursor: pointer;
   }
 }
 
