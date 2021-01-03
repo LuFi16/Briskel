@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briskel Bricks - Napájení - 4xAA baterie</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/08ab134375.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <script src="javascript/header.js"></script>
+</header>
+
+<main id="c-page">
+
+    <noscript class="c-warning" id="c-warning">Prosím, povolte si javascript v prohlížeči. Některé funkce Vám jinak mohou být skryty.</noscript>
+    <p class="c-warning-info" id="c-warning-info">Vítejte na našich stránkách! Berte prosím na vědomí, že stránky jsou právě ve vývoji a mohou obsahovat chyby.</p>
+
+    <h1 class="c-page-first-heading">Napájení - 4xAA baterie</h1>
+
+    <section class="c-section-brick_info">
+        <div class="c-brick_info-brick_box">
+
+            <div class="c-mini-gallery">
+                <img class="c-mini-gallery-big-img" id="mini-gallery-big-img" src="downloads/boards/005_6x4_4xAA_power_supply_R4/img1.jpg" alt="img">
+
+                <div class="c-mini-gallery-small-imgs">
+                    <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/img1.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/img2.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/img3.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/demo1.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/demo2.jpg" alt="img" onclick="miniGallery(this);">
+                </div>
+            </div>
+
+            <div>
+                <p>Modul obsahuje tříbarevnou diodu, ovládanou třemi vstupními signály:</p>
+                <ul>
+                    <li>1 - zelená</li>
+                    <li>2 - modrá</li>
+                    <li>3 - červená</li>
+                </ul>
+                <p>Vstupní hodnota ovlivňuje intenzitu jednotlivé LED. Pokud je hodnota negativní, příslušná dioda bliká.</p>
+
+            </div>
+        </div>
+
+        <div class="c-video-wrapper">
+            <video controls="controls" src="https://www.briskel.com/videos/005_6x4_4xAA_power_supply_R4_tutorial.mp4" class="c-video">
+                Your browser does not support the HTML5 Video element.
+            </video>
+        </div>
+    </section>
+
+
+
+    <section class="c-section_manual">
+
+        <div class="c-section-heading" onclick="ShowHideMan()">
+            <h2>Návod k výrobě</h2>
+            <span id="c-man-open"><i class="fas fa-caret-up"></i></span>
+            <span id="c-man-close"><i class="fas fa-caret-down"></i></span>
+        </div>
+
+
+        <div id="c-manual">
+            
+            <div class="c-video-wrapper">
+                <video controls="controls" src="https://www.briskel.com/videos/005_6x4_4xAA_power_supply_R4_assembly.mp4" class="c-video">
+                    Your browser does not support the HTML5 Video element.
+                </video>
+            </div>
+            
+            <h3>Seznam součástek potřebných k vyrobení:</h3>
+
+            <div class="c-vertical-scroll">
+                <table class="c-table">
+                    <thead>
+                    <tr>
+                        <th>Kategorie</th>
+                        <th></th>
+                        <th>Popis</th>
+                        <th>Poznámka</th>
+                        <th>Počet</th>
+                        <th>Název</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>3D tisk</td>
+                        <td>
+                            <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/005_6x4_4xAA_power_supply_R4_top.png"
+                             alt="top" width="64" height="64">
+                        </td>
+                        <td>Krabička top</td>
+                        <td>Tisk bez podpor</td>
+                        <td>1</td>
+                        <td>
+                            <a href="downloads/boards/005_6x4_4xAA_power_supply_R4/005_6x4_4xAA_power_supply_R4_top.stl">
+                                005_6x4_4xAA_power_supply_R4_top.stl</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3D tisk</td>
+                        <td>
+                            <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/005_6x4_4xAA_power_supply_R4_top.png"
+                             alt="top" width="64" height="64">
+                        </td>
+                        <td>Krabička top</td>
+                        <td>Tisk bez podpor</td>
+                        <td>1</td>
+                        <td>
+                            <a href="downloads/boards/005_6x4_4xAA_power_supply_R4/005_6x4_4xAA_power_supply_R4_bot.stl">
+                                005_6x4_4xAA_power_supply_R4_bot.stl</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3D tisk</td>
+                        <td>
+                            <img src="downloads/common/mechanics/000_pcb_distance_washer.png"
+                             alt="washer" width="64" height="64">
+                        </td>
+                        <td>Podpora pod PCB</td>
+                        <td>Tisk bez podpor</td>
+                        <td>4</td>
+                        <td>
+                            <a href="downloads/common/mechanics/000_pcb_distance_washer.stl">
+                                000_pcb_distance_washer.stl</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Elektronika</td>
+                        <td>
+                            <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/pcb.jpg"
+                             alt="pcb" width="64" height="64">
+                        </td>
+                        <td>Osazený plošný spoj s konektory, naprogramovaný</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>005_6x4_4xAA_power_supply_R4</td>
+                    </tr>
+                    <tr>
+                        <td>Spojovací materiál</td>
+                        <td>
+                            <img src="downloads/common/mechanics/screw_B2.5x10.jpg"
+                             alt="screw" width="64" height="64">
+                        </td>
+                        <td>Šroub do plastu B2.5x10</td>
+                        <td></td>
+                        <td>4</td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+   <section class="c-page_electronics">
+
+        <div class="c-section-heading" onclick="ShowHideEle()">
+            <h2>Elektronika</h2>
+            <span id="c-ele-open"><i class="fas fa-caret-up"></i></span>
+            <span id="c-ele-close"><i class="fas fa-caret-down"></i></span>
+        </div>
+
+        <div id="c-electronics">
+            <p>
+                Plošný spoj - <a href="downloads/boards/005_6x4_4xAA_power_supply_R4/schematics.pdf" target="_blank">schema</a>
+            <p>
+        </div>
+        
+    </section>
+
+
+
+</main>
+
+<footer>
+    <script src="javascript/footer.js"></script>
+</footer>
+
+<script src="javascript/main.js"></script>
+
+</body>
+</html>
