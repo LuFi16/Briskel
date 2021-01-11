@@ -30,20 +30,52 @@
                     <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/img1.jpg" alt="img" onclick="miniGallery(this);">
                     <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/img2.jpg" alt="img" onclick="miniGallery(this);">
                     <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/img3.jpg" alt="img" onclick="miniGallery(this);">
-                    <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/demo1.jpg" alt="img" onclick="miniGallery(this);">
-                    <img src="downloads/boards/005_6x4_4xAA_power_supply_R4/demo2.jpg" alt="img" onclick="miniGallery(this);">
                 </div>
             </div>
 
             <div>
-                <p>Modul obsahuje tříbarevnou diodu, ovládanou třemi vstupními signály:</p>
-                <ul>
-                    <li>1 - zelená</li>
-                    <li>2 - modrá</li>
-                    <li>3 - červená</li>
-                </ul>
-                <p>Vstupní hodnota ovlivňuje intenzitu jednotlivé LED. Pokud je hodnota negativní, příslušná dioda bliká.</p>
+                <p>Modul obsahuje čtyři AA baterie a slouží k napájení ostatních krabiček.  </p>
+                
+                <p>Modul indikuje stav baterie červenou a zelenou diodu. Modul obsahuje vypínač k zapnutí/vypnití modulu a micro USB konektor k nabíjení baterie.</p>
+                
+                <table class="c-table">
+                    <thead>
+                    <tr>
+                        <th>Stav</th>
+                        <th>Popis</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                    <tr>
+                        <td>Nic nesvítí</td>
+                        <td>Zařízení je vypnuto, pro zapnutí přepněte vypínač do polohy zapnuto</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Svítí zelená LED</td>
+                        <td>Zařízení je zapnuto, baterie je nabitá, zapojené moduly fungují</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Svítí červené LED</td>
+                        <td>Zařízení je zapnuto, baterie je vybitá, zapojené moduly jsou odpojeny a nefungují</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Nabíjení</td>
+                        <td>V případě, že se rozsvítí červená dioda, je nutné baterii nabít. Zapojte modul pomocí mikro USB kabelu do nabíječky např. na telefon s parametry
+                            alespoň 5V/1A. Červená dioda začne blikat. Až dioda přestane blikat, baterie je nabitá. Nabíjení může trvat až 6 hodin v závislosti na stavu vybití baterie</td>
+                    </tr>
+                   
+                    </tbody>
 
+                </table>
+                
+                <p>Poznámka 1 - zařízení monitoruje aktuální napětí baterií, poklesne li hodota napětí na baterii pod určitý limit, rozsvítí se červená dioda a zapojené moduly nejsou napájeny. Tento pokles může být způsoben buď vybitou baterií nebo moc velikým proudovým odběrem. V takovémto případě doporučujeme baterie nabít, popř. odpojit moduly, které spotřebovávají více proudu.</p>
+                <p>Poznámka 2 - V případě, že je baterie vybitá (svítí červená dioda) a uživatel dlouho napájení nevypne vypínačem, tak po jedné hodině červená dioda začne blikat a po čtyřech hodinách se vypne úplně z důvodu úspory energie.</p>
+                
+                
             </div>
         </div>
 
