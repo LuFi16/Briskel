@@ -6,6 +6,7 @@ document.write('\
             <ul>\
                 <li><a href="index.html">Dom&#367;</a><span class="c-menu_line"></span></li>\
                 <li><a href="bricks.html">Bricks</a><span class="c-menu_line"></span></li>\
+                <li><a href="projects.html">Projekty</a><span class="c-menu_line"></span></li>\
                 <li><a href="how_it_works.html">Princip</a><span class="c-menu_line"></span></li>\
                 <li><a href="kontakt.html">Kontakt</a><span class="c-menu_line"></span></li>\
             </ul>\
@@ -24,6 +25,7 @@ document.write('\
             <ul>\
                 <li><a href="index.html">Dom&#367;</a></li>\
                 <li><a href="bricks.html">Bricks</a></li>\
+                <li><a href="projects.html">Projekty</a></li>\
                 <li><a href="how_it_works.html">Princip</a></li>\
                 <li><a href="kontakt.html">Kontakt</a></li>\
                 <li><a href="#" onclick="NeniKDispoziciJazyk()"><img src="img/vlajka-UK.svg" alt="english" class="c-menu_flag-img">English</a></li>\
