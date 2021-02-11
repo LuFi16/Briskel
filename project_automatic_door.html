@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briskel Bricks - Automatické dveře</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/08ab134375.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <script src="javascript/header.js"></script>
+</header>
+
+<main id="c-page">
+
+    
+
+    <h1 class="c-page-first-heading">Automatické dveře</h1>
+
+    <section class="c-section-brick_info">
+        <div class="c-brick_info-brick_box">
+
+            <div class="c-mini-gallery">
+                <img class="c-mini-gallery-big-img" id="mini-gallery-big-img" src="downloads/projects/project_automatic_door/img1.jpg" alt="img">
+
+                <div class="c-mini-gallery-small-imgs">
+                    <img src="downloads/projects/project_automatic_door/img1.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/projects/project_automatic_door/img2.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/projects/project_automatic_door/img3.jpg" alt="img" onclick="miniGallery(this);">
+                </div>
+            </div>
+
+            <div>
+                <p>Zmáčknutím tlačítka se řídí otvírání a zavírání dveří. </p>
+                <p>Nejprve se naprogramuje do programátoru, jak dlouho se otvírají/zavírají dveře. Tato sekvence se pak na zmáčknutí tlačítka opakuje.</p>
+                <p>Tip: po výměně modulu spínacího tlačítka za detektor hluku, otvírání a zavírání dveří lze ovládat např. tlesknutím.</p>
+                
+
+            </div>
+        </div>
+
+        
+    </section>
+
+    
+
+    <section class="c-section_manual">
+    
+        <div class="c-section-heading" onclick="ShowHideMan()">
+            <h2>Video</h2>
+            <span id="c-man-open"><i class="fas fa-caret-up"></i></span>
+            <span id="c-man-close"><i class="fas fa-caret-down"></i></span>
+        </div>
+        
+        <div class="c-video-wrapper">
+            <video controls="controls" src="downloads/projects/project_automatic_door/video1.mp4" class="c-video">
+                Your browser does not support the HTML5 Video element.
+            </video>
+        </div>
+
+        
+    </section>
+    
+    <section class="c-section_manual">
+    
+        <div class="c-section-heading" onclick="ShowHideMan()">
+            <h2>Zapojení</h2>
+            <span id="c-man-open"><i class="fas fa-caret-up"></i></span>
+            <span id="c-man-close"><i class="fas fa-caret-down"></i></span>
+        </div>
+        
+        <div id="c-manual">
+            <img src="downloads/projects/project_automatic_door/img1.jpg" alt="img">
+            
+            <p>Potřebné moduly:</p>
+                <ul>
+                    <li>Napájení</li>
+                    <li>4x potenciometer (na naprogramování pokybů)</li>
+                    <li>Tlačítko na sepnutí pohybu</li>
+                    <li>Motor</li>
+                    <li>Prodlužovací kabel</li>
+                    <li>Programátor</li>
+                </ul>
+              
+            <p></p>  
+            <p>Autor: Josef a Martin P. (5 a 34 let)</p>  
+        </div>
+        
+        
+    </section>
+    </div>
+
+
+
+
+
+</main>
+
+<footer>
+    <script src="javascript/footer.js"></script>
+</footer>
+
+<script src="javascript/main.js"></script>
+
+</body>
+</html>
