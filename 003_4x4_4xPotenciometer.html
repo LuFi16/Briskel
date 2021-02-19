@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Briskel Bricks - Bzučák</title>
+    <title>Briskel Bricks - 4x potenciometer</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="icon" type="image/png" href="img/favicon.png">
     <script src="https://kit.fontawesome.com/08ab134375.js" crossorigin="anonymous"></script>
@@ -17,33 +17,35 @@
 
     <noscript class="c-warning" id="c-warning">Prosím, povolte si javascript v prohlížeči. Některé funkce Vám jinak mohou být skryty.</noscript>
 
-    <h1 class="c-page-first-heading">Bzučák</h1>
+    <h1 class="c-page-first-heading">4x potenciometer</h1>
 
     <section class="c-section-brick_info">
         <div class="c-brick_info-brick_box">
 
             <div class="c-mini-gallery">
-                <img class="c-mini-gallery-big-img" id="mini-gallery-big-img" src="downloads/boards/008_4x4_Piezo_buzzer/img1.jpg" alt="img">
+                <img class="c-mini-gallery-big-img" id="mini-gallery-big-img" src="downloads/boards/003_4x4_4xPotenciometer/img1.jpg" alt="img">
 
                 <div class="c-mini-gallery-small-imgs">
-                    <img src="downloads/boards/008_4x4_Piezo_buzzer/img1.jpg" alt="img" onclick="miniGallery(this);">
-                    <img src="downloads/boards/008_4x4_Piezo_buzzer/img2.jpg" alt="img" onclick="miniGallery(this);">
-                    <img src="downloads/boards/008_4x4_Piezo_buzzer/img3.jpg" alt="img" onclick="miniGallery(this);">
-                    <img src="downloads/boards/008_4x4_Piezo_buzzer/img4.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/003_4x4_4xPotenciometer/img1.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/003_4x4_4xPotenciometer/img2.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/003_4x4_4xPotenciometer/img3.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/003_4x4_4xPotenciometer/img4.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/003_4x4_4xPotenciometer/img5.jpg" alt="img" onclick="miniGallery(this);">
                 </div>
             </div>
 
             <div>
-                <p>Modul obsahuje piezoelektrický bzučák u kterého lze nastavit vstupní hodnotou</p>
+                <p>Modul obsahuje 4 potenciometry. Každý potenciometer generuje signál v rozmezí:</p>
                 <ul>
-                    <li>Kladná hodnota - změna frekvene, bzučák trvale zapnut</li>
-                    <li>Negativní hodnota - metronom - bzučák přerušovaně pípá. Hodnota ovlivňuje frekvenci pípání.</li>
+                    <li> -1 (otočeno maximálně doleva)</li>
+                    <li> 0 (střed)</li>
+                    <li> +1 (otočeno maximálně doprava)</li>
                 </ul>
             </div>
         </div>
 
         <div class="c-video-wrapper">
-            <video controls="controls" src="videos/008_4x4_Piezo_buzzer_tutorial.mp4" class="c-video">
+            <video controls="controls" src="videos/002_4x4_3xLed_semaphore_R2_tutorial.mp4" class="c-video">
                 Your browser does not support the HTML5 Video element.
             </video>
         </div>
@@ -60,7 +62,7 @@
         </div>
 
          <div class="c-video-wrapper">
-            <video controls="controls" src="videos/008_4x4_Piezo_buzzer_assembly.mp4" class="c-video">
+            <video controls="controls" src="videos/003_4x4_4xPotenciometer_assembly.mp4" class="c-video">
                 Your browser does not support the HTML5 Video element.
             </video>
         </div>
@@ -85,31 +87,47 @@
                     <tr>
                         <td>3D tisk</td>
                         <td>
-                            <img src="downloads/boards/008_4x4_Piezo_buzzer/008_4x4_Piezo_buzzer_top.png"
+                            <img src="downloads/boards/003_4x4_4xPotenciometer/003_4x4_4xPotenciometer_top.png"
                              alt="top" width="64" height="64">
                         </td>
                         <td>Krabička top</td>
                         <td>Tisk bez podpor</td>
                         <td>1</td>
                         <td>
-                            <a href="downloads/boards/008_4x4_Piezo_buzzer/008_4x4_Piezo_buzzer_top.stl">
-                                008_4x4_Piezo_buzzer_top.stl</a>
+                            <a href="downloads/boards/003_4x4_4xPotenciometer/003_4x4_4xPotenciometer_top.stl">
+                                003_4x4_4xPotenciometer_top.stl</a>
                         </td>
                     </tr>
                     <tr>
                         <td>3D tisk</td>
                         <td>
-                            <img src="downloads/common/mechanics/000_4x4_BottomStandard.png"
+                            <img src="downloads/boards/003_4x4_4xPotenciometer/003_4x4_4xPotenciometer_bot.png"
                              alt="bot" width="64" height="64">
                         </td>
                         <td>Krabička spodek</td>
                         <td>Tisk bez podpor</td>
                         <td>1</td>
                         <td>
-                            <a href="downloads/common/mechanics/000_4x4_BottomStandard.stl">
-                                000_4x4_BottomStandard.stl</a>
+                            <a href="downloads/boards/003_4x4_4xPotenciometer/003_4x4_4xPotenciometer_bot.stl">
+                                003_4x4_4xPotenciometer_bot.stl</a>
                         </td>
                     </tr>
+                    
+                    <tr>
+                        <td>3D tisk</td>
+                        <td>
+                            <img src="downloads/common/.png"
+                             alt="washer" width="64" height="64">
+                        </td>
+                        <td>Zarážka do knoflíků</td>
+                        <td>Tisk bez podpor</td>
+                        <td>4</td>
+                        <td>
+                            <a href="downloads/common/.stl">
+                                000_.stl</a>
+                        </td>
+                    </tr>
+                    
                     <tr>
                         <td>3D tisk</td>
                         <td>
@@ -128,14 +146,28 @@
                     <tr>
                         <td>Elektronika</td>
                         <td>
-                            <img src="downloads/boards/008_4x4_Piezo_buzzer/pcb.jpg"
+                            <img src="downloads/boards/003_4x4_4xPotenciometer/pcb.jpg"
                              alt="pcb" width="64" height="64">
                         </td>
                         <td>Osazený plošný spoj s konektory, naprogramovaný</td>
                         <td></td>
                         <td>1</td>
-                        <td>008_4x4_Piezo_buzzer</td>
+                        <td>003_4x4_4xPotenciometer</td>
                     </tr>
+                    
+                    <tr>
+                        <td>Ostatní</td>
+                        <td>
+                            <img src="downloads/boards/003_4x4_4xPotenciometer/img5.jpg"
+                             alt="washer" width="64" height="64">
+                        </td>
+                        <td>Knoflík na potenciometer</td>
+                        <td></td>
+                        <td>4</td>
+                        <td>
+                        </td>
+                    </tr>
+                    
                     <tr>
                         <td>Spojovací materiál</td>
                         <td>
@@ -165,7 +197,7 @@
 
         <div id="c-electronics">
             <p>
-                Plošný spoj - <a href="downloads/boards/008_4x4_Piezo_buzzer/schematics.pdf" target="_blank">schema</a>
+                Plošný spoj - <a href="downloads/boards/003_4x4_4xPotenciometer/schematics.pdf" target="_blank">schema</a>
             <p>
         </div>
         

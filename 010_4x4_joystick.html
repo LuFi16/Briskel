@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Briskel Bricks - Bzučák</title>
+    <title>Briskel Bricks - Joystick</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="icon" type="image/png" href="img/favicon.png">
     <script src="https://kit.fontawesome.com/08ab134375.js" crossorigin="anonymous"></script>
@@ -17,33 +17,41 @@
 
     <noscript class="c-warning" id="c-warning">Prosím, povolte si javascript v prohlížeči. Některé funkce Vám jinak mohou být skryty.</noscript>
 
-    <h1 class="c-page-first-heading">Bzučák</h1>
+    <h1 class="c-page-first-heading">Joystick</h1>
 
     <section class="c-section-brick_info">
         <div class="c-brick_info-brick_box">
 
             <div class="c-mini-gallery">
-                <img class="c-mini-gallery-big-img" id="mini-gallery-big-img" src="downloads/boards/008_4x4_Piezo_buzzer/img1.jpg" alt="img">
+                <img class="c-mini-gallery-big-img" id="mini-gallery-big-img" src="downloads/boards/010_4x4_joystick/img1.jpg" alt="img">
 
                 <div class="c-mini-gallery-small-imgs">
-                    <img src="downloads/boards/008_4x4_Piezo_buzzer/img1.jpg" alt="img" onclick="miniGallery(this);">
-                    <img src="downloads/boards/008_4x4_Piezo_buzzer/img2.jpg" alt="img" onclick="miniGallery(this);">
-                    <img src="downloads/boards/008_4x4_Piezo_buzzer/img3.jpg" alt="img" onclick="miniGallery(this);">
-                    <img src="downloads/boards/008_4x4_Piezo_buzzer/img4.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/010_4x4_joystick/img1.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/010_4x4_joystick/img2.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/010_4x4_joystick/img3.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/010_4x4_joystick/img4.jpg" alt="img" onclick="miniGallery(this);">
+                    <img src="downloads/boards/010_4x4_joystick/img5.jpg" alt="img" onclick="miniGallery(this);">
                 </div>
             </div>
 
             <div>
-                <p>Modul obsahuje piezoelektrický bzučák u kterého lze nastavit vstupní hodnotou</p>
+                <p>Modul obsahuje jeden joystick, kteý otáčením generuje dva signály určených pro ovládání motorů. Když je zmáčknut joystick:</p>
                 <ul>
-                    <li>Kladná hodnota - změna frekvene, bzučák trvale zapnut</li>
-                    <li>Negativní hodnota - metronom - bzučák přerušovaně pípá. Hodnota ovlivňuje frekvenci pípání.</li>
+                    <li>Dopředu - signál X a Y je (+1, +1)</li>
+                    <li>Dozadu - signál X a Y je (-1, -1)</li>
+                    <li>Doprava - signál X a Y je (-1, +1)</li>
+                    <li>Doleva - signál X a Y je (+1, -1)</li>
+                </ul>
+                <p>Modul generuje třetí signál - joystick je zmáčknut-není zmáčknut</p>
+                <ul>
+                    <li>Joystick je zmáčknut (+1)</li>
+                    <li>Joystick není zmáčknut (0)</li>
                 </ul>
             </div>
         </div>
 
         <div class="c-video-wrapper">
-            <video controls="controls" src="videos/008_4x4_Piezo_buzzer_tutorial.mp4" class="c-video">
+            <video controls="controls" src="downloads\projects\project_sport_car\video1.mp4" class="c-video">
                 Your browser does not support the HTML5 Video element.
             </video>
         </div>
@@ -60,7 +68,7 @@
         </div>
 
          <div class="c-video-wrapper">
-            <video controls="controls" src="videos/008_4x4_Piezo_buzzer_assembly.mp4" class="c-video">
+            <video controls="controls" src="videos/010_4x4_joystick_assembly.mp4" class="c-video">
                 Your browser does not support the HTML5 Video element.
             </video>
         </div>
@@ -85,15 +93,15 @@
                     <tr>
                         <td>3D tisk</td>
                         <td>
-                            <img src="downloads/boards/008_4x4_Piezo_buzzer/008_4x4_Piezo_buzzer_top.png"
+                            <img src="downloads/boards/010_4x4_joystick/010_4x4_joystick_top.png"
                              alt="top" width="64" height="64">
                         </td>
                         <td>Krabička top</td>
                         <td>Tisk bez podpor</td>
                         <td>1</td>
                         <td>
-                            <a href="downloads/boards/008_4x4_Piezo_buzzer/008_4x4_Piezo_buzzer_top.stl">
-                                008_4x4_Piezo_buzzer_top.stl</a>
+                            <a href="downloads/boards/010_4x4_joystick/010_4x4_joystick_top.stl">
+                                010_4x4_joystick_top.stl</a>
                         </td>
                     </tr>
                     <tr>
@@ -128,13 +136,13 @@
                     <tr>
                         <td>Elektronika</td>
                         <td>
-                            <img src="downloads/boards/008_4x4_Piezo_buzzer/pcb.jpg"
+                            <img src="downloads/boards/010_4x4_joystick/pcb.jpg"
                              alt="pcb" width="64" height="64">
                         </td>
                         <td>Osazený plošný spoj s konektory, naprogramovaný</td>
                         <td></td>
                         <td>1</td>
-                        <td>008_4x4_Piezo_buzzer</td>
+                        <td>010_4x4_joystick</td>
                     </tr>
                     <tr>
                         <td>Spojovací materiál</td>
@@ -147,6 +155,19 @@
                         <td>4</td>
                         <td></td>
                     </tr>
+                    
+                    <tr>
+                        <td>Ostatní</td>
+                        <td>
+                            <img src="downloads/boards/010_4x4_joystick/img5.jpg"
+                             alt="screw" width="64" height="64">
+                        </td>
+                        <td>Hmatník</td>
+                        <td></td>
+                        <td>1</td>
+                        <td></td>
+                    </tr>
+                    
                     </tbody>
 
                 </table>
@@ -165,7 +186,7 @@
 
         <div id="c-electronics">
             <p>
-                Plošný spoj - <a href="downloads/boards/008_4x4_Piezo_buzzer/schematics.pdf" target="_blank">schema</a>
+                Plošný spoj - <a href="downloads/boards/010_4x4_joystick/schematics.pdf" target="_blank">schema</a>
             <p>
         </div>
         
